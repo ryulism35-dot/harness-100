@@ -1,0 +1,4 @@
+{
+  "name": "harness-100",
+  "postStartCommand": "bash /workspaces/harness-100/scripts/autostart.sh"
+}

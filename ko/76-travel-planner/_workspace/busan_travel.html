@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>부산 여행 계획서 (2026.07.29 ~ 08.01)</title>
+<style>
+/* ── Google Fonts: Noto Sans KR ── */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+:root {
+  --primary:   #1a3a5c;
+  --secondary: #2c5f8a;
+  --accent:    #3a7abf;
+  --light-bg:  #f5f8fc;
+  --border:    #d0dce8;
+  --text:      #222;
+  --muted:     #666;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--text);
+  background: #f0f4f8;
+}
+
+/* ── Nav sidebar ── */
+#toc {
+  position: fixed;
+  top: 0; left: 0;
+  width: 220px;
+  height: 100vh;
+  background: var(--primary);
+  color: #cde;
+  padding: 24px 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+#toc h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #aac;
+  padding: 0 20px 12px;
+  border-bottom: 1px solid #2a4f72;
+  margin-bottom: 8px;
+}
+#toc a {
+  display: block;
+  padding: 8px 20px;
+  color: #cde;
+  text-decoration: none;
+  font-size: 13px;
+  transition: background .15s;
+}
+#toc a:hover { background: #2c5f8a; color: #fff; }
+#toc .toc-icon { margin-right: 6px; }
+
+/* ── Main content ── */
+#main {
+  margin-left: 220px;
+  padding: 40px 48px;
+  max-width: 960px;
+}
+
+/* ── Cover banner ── */
+.cover {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: white;
+  border-radius: 12px;
+  padding: 48px 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.cover h1 { font-size: 30px; font-weight: 700; margin-bottom: 10px; }
+.cover .subtitle { font-size: 16px; opacity: .85; }
+.cover .meta { margin-top: 20px; font-size: 14px; opacity: .75; }
+
+/* ── Chapter sections ── */
+.chapter {
+  background: white;
+  border-radius: 10px;
+  padding: 36px 40px;
+  margin-bottom: 32px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.07);
+}
+.chapter-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  padding: 14px 20px;
+  margin: -36px -40px 28px;
+}
+.chapter-header .icon { font-size: 22px; }
+.chapter-header h2 { font-size: 18px; font-weight: 700; }
+
+/* ── Headings inside chapters ── */
+h1 { font-size: 20px; color: var(--primary); margin: 24px 0 10px; padding-bottom: 6px; border-bottom: 2px solid var(--primary); }
+h2 { font-size: 16px; color: var(--secondary); margin: 20px 0 8px; padding-left: 10px; border-left: 4px solid var(--secondary); }
+h3 { font-size: 14px; color: var(--accent); margin: 16px 0 6px; }
+h4 { font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+h5, h6 { font-size: 12px; color: var(--muted); margin: 10px 0 4px; }
+
+p { margin: 4px 0 6px; }
+.spacer { height: 6px; }
+
+/* ── Tables ── */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  font-size: 13px;
+  overflow-x: auto;
+  display: block;
+}
+th {
+  background: var(--secondary);
+  color: white;
+  padding: 8px 10px;
+  text-align: left;
+  font-weight: 700;
+  white-space: nowrap;
+}
+td {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  vertical-align: top;
+}
+tr:nth-child(even) td { background: var(--light-bg); }
+tr:hover td { background: #e8f0f8; }
+
+/* ── Lists ── */
+ul, ol { margin: 6px 0 10px 22px; }
+li { margin: 3px 0; }
+
+/* ── Inline ── */
+strong { font-weight: 700; color: var(--primary); }
+em { font-style: italic; color: var(--secondary); }
+code {
+  background: #eef2f7;
+  padding: 1px 5px;
+  border-radius: 3px;
+  font-size: 12px;
+  font-family: 'Noto Sans KR', monospace;
+}
+pre {
+  background: #eef2f7;
+  padding: 14px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  margin: 10px 0;
+}
+
+hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  #toc { display: none; }
+  #main { margin-left: 0; padding: 20px 16px; }
+  .chapter { padding: 24px 18px; }
+  .chapter-header { margin: -24px -18px 20px; }
+}
+</style>
+</head>
+<body>
+
+<nav id="toc">
+  <h2>목차</h2>
+  <a href="#00-input"><span class="toc-icon">✈️</span>여행 입력 정보</a>
+  <a href="#01-destination-analysis"><span class="toc-icon">🗺️</span>목적지 분석</a>
+  <a href="#02-itinerary"><span class="toc-icon">📅</span>여행 일정표</a>
+  <a href="#03-accommodation"><span class="toc-icon">🏨</span>숙소 가이드</a>
+  <a href="#04-budget"><span class="toc-icon">💰</span>예산 계획서</a>
+  <a href="#05-local-guide"><span class="toc-icon">🧭</span>현지 정보 가이드</a>
+</nav>
+
+<div id="main">
+  <div class="cover">
+    <h1>🌊 부산 여행 계획서</h1>
+    <div class="subtitle">2026년 7월 29일 (수) ~ 8월 1일 (토) · 3박 4일</div>
+    <div class="meta">성인 5명 + 아이 4명 (만 2~12세) · 한국인 4명 + 일본인 5명</div>
+  </div>
+  <section class="chapter" id="00-input"><div class="chapter-header"><span class="icon">✈️</span><h2>여행 입력 정보</h2></div><h1>여행 입력 정보</h1>
+<div class='spacer'></div>
+<h2>기본 정보</h2>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>목적지</td><td>부산 및 근교 도시</td></tr>
+<tr><td>기간</td><td>2026년 7월 29일(수) ~ 8월 1일(토), 3박4일</td></tr>
+<tr><td>인원</td><td>총 9명 (성인 5명 + 아이 4명)</td></tr>
+<tr><td>아이 나이</td><td>만 2세, 만 5세(추정), 만 8세(추정), 만 12세(추정) — 2~12세 범위</td></tr>
+<tr><td>숙박 예산</td><td>1박 100만원 이하</td></tr>
+<tr><td>그룹 구성</td><td>한국인 4명 + 일본인 5명 (일본인은 부산 첫 방문)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h2>여행 스타일</h2>
+<ul>
+<li><strong>필수</strong>: 수영장 또는 워터파크 — 어린이 동반이므로 물놀이 필수</li>
+<li><strong>우선순위</strong>: 아이들이 즐길 수 있는 활동 위주</li>
+<li><strong>배려사항</strong>: 최연소 만 2세 포함 → 낮잠/휴식 시간 확보, 이동 동선 최소화</li>
+<li><strong>외국인 배려</strong>: 일본인 5명의 부산 첫 방문 → 부산 대표 명소·음식 경험 포함</li>
+</ul>
+<div class='spacer'></div>
+<h2>특별 요청</h2>
+<ul>
+<li>일본인 관광객에게 부산의 매력을 잘 보여줄 수 있는 코스 포함</li>
+<li>어린아이(만 2세)를 위한 유모차 접근성 고려</li>
+<li>7월 말~8월 초 성수기 → 예약 전략 중요</li>
+</ul>
+<div class='spacer'></div></section>
+  <section class="chapter" id="01-destination-analysis"><div class="chapter-header"><span class="icon">🗺️</span><h2>목적지 분석</h2></div><h1>목적지 분석 보고서</h1>
+<div class='spacer'></div>
+<p><strong>작성일:</strong> 2026-04-19  </p>
+<p><strong>담당 에이전트:</strong> destination-analyst  </p>
+<p><strong>여행 개요:</strong> 부산 및 근교 3박4일 (2026.07.29~08.01), 성인5+아이4, 총9명</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>기본 정보</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>목적지</td><td>대한민국 부산광역시 및 경상남도 근교</td></tr>
+<tr><td>이동 방법</td><td>일본 → 부산 직항 페리/항공 (일본인 5명 기준), 국내 KTX/버스 가능</td></tr>
+<tr><td>시차</td><td>없음 (한국 KST = 일본 JST, 동일 시간대)</td></tr>
+<tr><td>통화</td><td>대한민국 원 (KRW)</td></tr>
+<tr><td>언어</td><td>한국어 (부산 방언), 일본어·영어 부분 통용 (관광지 중심)</td></tr>
+<tr><td>일본→부산 이동</td><td>항공: 후쿠오카 약 40분, 오사카·도쿄 약 1~1.5시간 / 페리: 후쿠오카(하카타항)→부산 약 3시간 (쾌속선 기준)</td></tr>
+<tr><td>비자</td><td>불필요 (한·일 상호 무비자, 90일 이내)</td></tr>
+<tr><td>여행자 보험</td><td>별도 가입 권장 (특히 만 2세 영유아 포함)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>7월 말~8월 초 부산 날씨 및 방문 적합성</h2>
+<div class='spacer'></div>
+<h3>기온 및 기후</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>수치 (7월 말~8월 초 평균)</th></tr></thead><tbody>
+<tr><td>평균 기온</td><td>26~29°C</td></tr>
+<tr><td>최고 기온</td><td>31~34°C (폭염일 35°C 초과 가능)</td></tr>
+<tr><td>평균 습도</td><td>70~80% (장마 후 무덥고 습함)</td></tr>
+<tr><td>강수량</td><td>월 200~300mm (집중 호우 가능)</td></tr>
+<tr><td>일조 시간</td><td>오전 맑음 → 오후 소나기 패턴 잦음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>장마·태풍 리스크</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>장마:</strong> 부산 장마는 통상 6월 말~7월 중순에 종료되나, 7월 말에도 잔여 강수 가능. 2026년 장마 종료 시점은 현지 기상청 확인 필요.</li>
+<li><strong>태풍:</strong> 7월 말~8월 초는 태풍 시즌 초입. 한반도 상륙 태풍은 평균 연 1~2회이며 8~9월 집중. 7월 29일~8월 1일 출발 전 기상 모니터링 필수.</li>
+<li><strong>대응 전략:</strong> 호텔/워터파크 예약 시 취소·환불 정책 확인 필수. 태풍 접근 시 야외 일정 실내로 대체할 플랜B 수립 권장.</li>
+</ul>
+<div class='spacer'></div>
+<h3>성수기 특성</h3>
+<div class='spacer'></div>
+<ul>
+<li>7월 말~8월 초는 한국 및 일본의 여름 성수기 피크. 해운대·광안리 해수욕장은 일일 수십만 명 방문.</li>
+<li>워터파크·숙박·레스토랑 모두 사전 예약 필수. 현장 예약은 사실상 불가 수준.</li>
+<li>일본인 여행자 급증 시기와 겹쳐 인기 관광지 내 일본어 지원 수준도 비교적 양호.</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>주요 관광자원</h2>
+<div class='spacer'></div>
+<h3>어린이 동반 추천 명소 (워터파크/수영장/키즈존 포함)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>특징</th><th>아이 적합성</th><th>유모차 접근성</th></tr></thead><tbody>
+<tr><td><strong>롯데워터파크 (기장)</strong></td><td>국내 최대급 워터파크, 실내+야외 구성</td><td>만 2세~전연령 (유아풀·튜브 완비)</td><td>우수 (엘리베이터, 평탄 동선)</td></tr>
+<tr><td><strong>해운대 해수욕장</strong></td><td>부산 대표 해변, 안전요원 상주</td><td>전연령 (파도 주의, 영유아 물가 제한)</td><td>양호 (모래사장 구간 주의)</td></tr>
+<tr><td><strong>송정 해수욕장</strong></td><td>해운대보다 한산, 파도 적음</td><td>영유아 포함 전연령 적합</td><td>양호</td></tr>
+<tr><td><strong>어린이대공원</strong></td><td>놀이기구, 동물원 구비</td><td>만 2세~초등</td><td>우수</td></tr>
+<tr><td><strong>국립해양박물관</strong></td><td>해양생물 전시, 어린이관</td><td>전연령, 영어·일본어 안내 일부 제공</td><td>우수</td></tr>
+<tr><td><strong>부산아쿠아리움 (해운대)</strong></td><td>상어·해양생물 전시</td><td>만 2세~전연령</td><td>우수</td></tr>
+<tr><td><strong>영도 흰여울문화마을</strong></td><td>산책·사진 포인트, 경사 일부</td><td>유모차 일부 구간 불편</td><td>보통 (경사로 주의)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>일본인 첫 방문자를 위한 부산 대표 명소</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>추천 이유</th><th>소요 시간</th></tr></thead><tbody>
+<tr><td><strong>해운대 해수욕장</strong></td><td>부산의 상징, 여름 필수 코스</td><td>2~3시간</td></tr>
+<tr><td><strong>광안대교 야경</strong></td><td>부산 랜드마크, 야간 드라이브·카페 명소</td><td>1~2시간</td></tr>
+<tr><td><strong>감천문화마을</strong></td><td>'한국의 산토리니', 벽화·골목 감성</td><td>1.5~2시간</td></tr>
+<tr><td><strong>자갈치시장</strong></td><td>신선한 해산물, 활어회 체험</td><td>1~2시간</td></tr>
+<tr><td><strong>국제시장·BIFF 광장</strong></td><td>부산 전통 시장·영화 문화</td><td>1~1.5시간</td></tr>
+<tr><td><strong>용두산공원·부산타워</strong></td><td>시내 전망, 케이블카 이용 가능</td><td>1시간</td></tr>
+<tr><td><strong>흰여울문화마을·태종대</strong></td><td>절벽 해안 절경, 일본 영화 촬영지 분위기</td><td>1.5~2시간</td></tr>
+<tr><td><strong>부산 초량 차이나타운·이바구길</strong></td><td>역사 거리, 항구 도시 정취</td><td>1시간</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>일본인 특이사항:</strong> 한일 간 역사 명소(일제강점기 관련 장소)가 다수 존재하므로, 일본인 동행 시 해설 방식에 배려 필요.</p>
+<div class='spacer'></div>
+<h3>근교 도시 당일치기 옵션</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>도시</th><th>부산에서 이동 시간</th><th>추천 테마</th><th>아이 동반 적합성</th></tr></thead><tbody>
+<tr><td><strong>경주</strong></td><td>KTX 약 20분, 버스 약 1시간</td><td>신라 역사·불국사·첨성대·경주월드</td><td>중상 (놀이공원 포함)</td></tr>
+<tr><td><strong>거제</strong></td><td>버스+ferry 약 1.5~2시간</td><td>해금강·바람의언덕·거제도 해변</td><td>중 (이동 시간 고려)</td></tr>
+<tr><td><strong>통영</strong></td><td>버스 약 1.5~2시간</td><td>한려해상국립공원·케이블카·굴 요리</td><td>중 (유모차 케이블카 주의)</td></tr>
+<tr><td><strong>남해</strong></td><td>버스 약 2시간</td><td>다랭이마을·독일마을·바다 드라이브</td><td>중 (이동 거리 다소 길음)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>권장:</strong> 3박4일 일정에서 근교 당일치기는 1회 최대 (경주 KTX 추천). 만 2세 아이가 있어 장거리 이동은 체력 부담이 크므로 최소화 권장.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>워터파크/수영장 전문 분석</h2>
+<div class='spacer'></div>
+<h3>1. 롯데워터파크 기장</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>부산 기장군 (부산 시내에서 차로 약 40분)</td></tr>
+<tr><td>규모</td><td>국내 최대 규모 워터파크 중 하나, 실내+야외 구성</td></tr>
+<tr><td>주요 시설</td><td>파도풀, 유수풀, 워터슬라이드, 유아전용 워터플레이 구역</td></tr>
+<tr><td>만 2세 적합성</td><td>유아풀(수심 0.3~0.5m) 별도 운영, 구명조끼 대여 가능</td></tr>
+<tr><td>입장료 (참고)</td><td>성인 약 6~8만원, 아이 약 4~6만원 (성수기 요금 상이) — 현지 확인 필요</td></tr>
+<tr><td>단체 할인</td><td>9명 단체 적용 여부 현지/홈페이지 확인 필요</td></tr>
+<tr><td>예약 방법</td><td>공식 홈페이지·앱 사전 예약 (성수기 매진 잦음, 2~3개월 전 예약 강권)</td></tr>
+<tr><td>주의사항</td><td>7월 말 주말 극도 혼잡, 평일 방문 시 대기 단축</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>2. 오션월드 (서울 인근) — 참고용</h3>
+<div class='spacer'></div>
+<p>기장 이외 대안으로 언급되나, 부산 여행 일정 내에서는 거리상 비효율. <strong>부산 내에서는 롯데워터파크가 최선.</strong></p>
+<div class='spacer'></div>
+<h3>3. 호텔 수영장 (숙박 연계)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>호텔</th><th>수영장 유형</th><th>아이 적합성</th><th>특이사항</th></tr></thead><tbody>
+<tr><td><strong>파라다이스 호텔 부산</strong></td><td>야외+실내</td><td>중 (어린이풀 유무 현지 확인 필요)</td><td>해운대 위치, 고급</td></tr>
+<tr><td><strong>해운대 그랜드 호텔</strong></td><td>야외</td><td>중</td><td>해수욕장 인접</td></tr>
+<tr><td><strong>롯데호텔 부산</strong></td><td>실내 수영장</td><td>중</td><td>도심 위치, 접근성 우수</td></tr>
+<tr><td><strong>힐튼 부산</strong></td><td>야외 인피니티풀</td><td>중상</td><td>해운대 인근, 성수기 수영장 이용 혼잡</td></tr>
+<tr><td><strong>웨스틴 조선 부산</strong></td><td>야외 수영장</td><td>중상</td><td>해운대 해변 바로 앞</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>전략 권장:</strong> 1박 100만원 이하 예산 기준, 9명 그룹은 <strong>2개 객실 이상</strong> 예약 필요. 수영장 보유 호텔 + 롯데워터파크 1일 방문 조합이 최적.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>안전 정보</h2>
+<div class='spacer'></div>
+<h3>태풍 시즌 주의사항</h3>
+<div class='spacer'></div>
+<ul>
+<li>출발 1주 전부터 기상청(kma.go.kr) 및 일본 기상청 태풍 정보 매일 확인.</li>
+<li>태풍 발령 시 해수욕장 출입 통제, 워터파크 임시 폐장 가능.</li>
+<li>여행자 보험 가입 시 <strong>기상재해 취소 특약</strong> 포함 여부 확인.</li>
+</ul>
+<div class='spacer'></div>
+<h3>해수욕장 안전</h3>
+<div class='spacer'></div>
+<ul>
+<li>해운대·광안리는 안전요원 상주, 수영 구역 외 출입 금지 구역 엄수.</li>
+<li>만 2세 유아는 절대 파도풀·해변 단독 입수 금지, 보호자 상시 동반.</li>
+<li>구명조끼: 워터파크 내 무료 대여 가능 (유아용 사이즈 사전 확인 필요).</li>
+<li>해파리 출몰: 7~8월 남해안 해파리 주의보 발령 가능 → 현지 안전요원 지시 준수.</li>
+</ul>
+<div class='spacer'></div>
+<h3>어린이 동반 주의사항</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>열사병:</strong> 7~8월 35°C 이상 폭염 가능. 유모차 내 영유아 온도 관리, 생수·전해질 음료 상시 지참.</li>
+<li><strong>낮잠 시간:</strong> 만 2세 아이 기준 오후 1~3시 낮잠 필요. 이 시간대 야외 일정 최소화, 숙소 복귀 또는 실내 활동 배치 권장.</li>
+<li><strong>식중독:</strong> 여름철 회·해산물 섭취 시 위생 확인. 영유아는 생선회·조개류 자제.</li>
+<li><strong>미아 예방:</strong> 해운대 등 초혼잡 장소에서 4명 아이에 보호자 최소 1:1 배치 권장.</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>일본인 여행자 배려사항</h2>
+<div class='spacer'></div>
+<h3>일한 문화 차이</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>일본 기준</th><th>한국 (부산) 기준</th><th>주의사항</th></tr></thead><tbody>
+<tr><td>식사 문화</td><td>조용한 식사, 팁 없음</td><td>왁자지껄, 팁 없음</td><td>유사</td></tr>
+<tr><td>음식 맵기</td><td>약함</td><td>강함</td><td>아이 메뉴 별도 확인</td></tr>
+<tr><td>음주 문화</td><td>음식점 내 음주 허용</td><td>동일</td><td>—</td></tr>
+<tr><td>화장실</td><td>고품질, 비데 보편</td><td>호텔·백화점은 양호, 시장은 다소 불편</td><td>—</td></tr>
+<tr><td>신발</td><td>실내 탈화 문화</td><td>한식당 좌식 탈신발</td><td>안내 필요</td></tr>
+<tr><td>교통</td><td>질서 정연</td><td>다소 혼잡, 택시 흥정 없음</td><td>지하철·버스 이용 권장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>부산에서의 일본어 통용도</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>해운대·광안리·자갈치:</strong> 일본어 메뉴판, 일본어 가능 직원 다수 (일본인 관광객 多).</li>
+<li><strong>감천문화마을·국제시장:</strong> 일본어 안내판 부분 설치.</li>
+<li><strong>일반 골목 식당:</strong> 한국어만 가능한 경우 다수 → 번역 앱(파파고/Google 번역) 준비 필수.</li>
+<li><strong>지하철:</strong> 한·영·중·일 4개 국어 안내 방송 운영.</li>
+</ul>
+<div class='spacer'></div>
+<h3>일본인이 좋아하는 부산 포인트</h3>
+<div class='spacer'></div>
+<ol>
+<li><strong>한국 음식 체험:</strong> 삼겹살, 냉면, 해물파전, 빙수 — 일본과 다른 식문화 체험.</li>
+<li><strong>K-팝·드라마 성지:</strong> 해운대, 광안대교 등 드라마 배경지.</li>
+<li><strong>면세 쇼핑:</strong> 롯데면세점, 신세계면세점 (부산점) — 화장품·K-뷰티 인기.</li>
+<li><strong>근접성:</strong> 후쿠오카에서 40분 비행, 가장 가까운 외국 — 부담 없는 해외여행 감각.</li>
+<li><strong>해산물:</strong> 자갈치시장 활어회, 기장 대게 — 신선도와 가격 만족도 높음.</li>
+<li><strong>찜질방·사우나:</strong> 일본 온천과 유사한 문화, 가족 단위 이용 가능.</li>
+</ol>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>일정설계자 전달 사항</h2>
+<div class='spacer'></div>
+<h3>관광지별 소요시간·위치·운영시간·연령 제한</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>위치</th><th>운영시간</th><th>소요시간</th><th>연령 제한</th><th>비고</th></tr></thead><tbody>
+<tr><td>롯데워터파크</td><td>기장군 기장읍</td><td>09:00~18:00 (성수기 연장 가능)</td><td>반나절~하루</td><td>신장 90cm 미만 일부 시설 이용 불가</td><td>현지 확인 필요</td></tr>
+<tr><td>해운대 해수욕장</td><td>해운대구 해운대해변로</td><td>07:00~22:00 (안전요원 09:00~18:00)</td><td>2~4시간</td><td>제한 없음</td><td>성수기 극혼잡</td></tr>
+<tr><td>부산아쿠아리움</td><td>해운대구 해운대해변로</td><td>10:00~20:00 (성수기 연장)</td><td>1.5~2시간</td><td>없음</td><td>유아 입장료 무료~할인</td></tr>
+<tr><td>국립해양박물관</td><td>영도구 해양로</td><td>09:00~18:00 (월 휴관)</td><td>1.5~2시간</td><td>없음</td><td>무료 입장</td></tr>
+<tr><td>감천문화마을</td><td>사하구 감천동</td><td>상시 (일부 갤러리 09:00~18:00)</td><td>1.5~2시간</td><td>없음</td><td>경사로 많아 유모차 어려움</td></tr>
+<tr><td>자갈치시장</td><td>중구 자갈치해안로</td><td>06:00~22:00</td><td>1~2시간</td><td>없음</td><td>어린이 해산물 알레르기 주의</td></tr>
+<tr><td>태종대</td><td>영도구 전망로</td><td>상시 (다누비열차 09:00~18:00)</td><td>1.5~2시간</td><td>없음</td><td>열차 이용 시 유모차 가능</td></tr>
+<tr><td>경주 (근교)</td><td>KTX 약 20분</td><td>불국사 08:00~17:00, 경주월드 10:00~18:00</td><td>6~8시간 (당일)</td><td>경주월드 신장 제한 일부</td><td>별도 일정 필요</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>일정 배치 권고</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>오전 (07:00~12:00):</strong> 야외 관광·해변 (기온 상승 전).</li>
+<li><strong>오후 (12:00~15:00):</strong> 실내 관광(아쿠아리움·박물관) 또는 숙소 낮잠 시간.</li>
+<li><strong>오후 (15:00~18:00):</strong> 워터파크 or 다시 야외 활동.</li>
+<li><strong>저녁 (18:00~):</strong> 야경·식사·야시장.</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>예산관리자 전달 사항</h2>
+<div class='spacer'></div>
+<h3>주요 입장료 (참고, 성수기 변동 가능)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>성인</th><th>어린이</th><th>비고</th></tr></thead><tbody>
+<tr><td>롯데워터파크</td><td>6~8만원</td><td>4~6만원</td><td>성수기 프리미엄 +20~30%</td></tr>
+<tr><td>부산아쿠아리움</td><td>2.5~3만원</td><td>1.5~2만원</td><td>현지 확인 필요</td></tr>
+<tr><td>태종대 다누비열차</td><td>3,000~5,000원</td><td>2,000~3,000원</td><td>—</td></tr>
+<tr><td>국립해양박물관</td><td>무료</td><td>무료</td><td>—</td></tr>
+<tr><td>감천문화마을</td><td>무료 (일부 스탬프 투어 소액)</td><td>—</td><td>—</td></tr>
+<tr><td>경주 불국사</td><td>6,000~7,000원</td><td>3,000원</td><td>—</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>식비 예상 (9명 기준 1끼)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>식사 유형</th><th>예상 비용</th></tr></thead><tbody>
+<tr><td>해운대 일반 한식</td><td>15~25만원</td></tr>
+<tr><td>자갈치 회 코스</td><td>30~50만원</td></tr>
+<tr><td>편의점·패스트푸드</td><td>5~10만원</td></tr>
+<tr><td>고급 레스토랑</td><td>50만원 이상</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>숙박 예산 전략 (1박 100만원 이하)</h3>
+<div class='spacer'></div>
+<ul>
+<li>9명 수용 가능한 객실 구성: <strong>2개 객실 × 50만원</strong> 또는 <strong>패밀리스위트 1실 + 스탠다드 1실</strong> 조합.</li>
+<li>해운대 지역 성수기 4~5성급 호텔은 1박 50~100만원 범주.</li>
+<li>에어비앤비·모텔은 가격 저렴하나 수영장·서비스 없음.</li>
+<li><strong>추천:</strong> 수영장 포함 4성급 호텔 2실 예약 (1박 총 80~100만원).</li>
+</ul>
+<div class='spacer'></div>
+<h3>성수기 가격 프리미엄</h3>
+<div class='spacer'></div>
+<ul>
+<li>숙박: 비수기 대비 1.5~2배</li>
+<li>워터파크 입장권: 비수기 대비 1.2~1.5배</li>
+<li>교통: 기차·항공 2~3개월 전 예약 시 30~50% 절약 가능</li>
+<li>식당: 성수기 대기 시간 증가 (예약 필수)</li>
+</ul>
+<div class='spacer'></div>
+<h3>성수기 예약 전략</h3>
+<div class='spacer'></div>
+<ol>
+<li><strong>숙박 (최우선):</strong> 지금 즉시 예약 권장 (2026년 7월 말 해운대 인기 호텔 이미 조기 마감 다수).</li>
+<li><strong>워터파크:</strong> 방문 2~3개월 전, 공식 홈페이지 단체 예약 문의.</li>
+<li><strong>항공/페리 (일본→부산):</strong> 최소 2~3개월 전 (후쿠오카~부산 페리 JR 큐슈 고속선 / 카멜리아라인 등).</li>
+<li><strong>인기 식당:</strong> 네이버 예약, 카카오 예약 시스템 활용, 방문 1~2주 전 예약.</li>
+</ol>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>현지가이드 전달 사항</h2>
+<div class='spacer'></div>
+<h3>교통 환경</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>교통수단</th><th>특징</th><th>유모차 적합성</th></tr></thead><tbody>
+<tr><td>부산 지하철</td><td>1~4호선 운영, 관광지 대부분 연결</td><td>엘리베이터 완비, 우수</td></tr>
+<tr><td>시내버스</td><td>노선 복잡, 현금·교통카드</td><td>저상버스 일부, 유모차 가능하나 혼잡</td></tr>
+<tr><td>택시</td><td>카카오택시 앱 편리, 9인 → 승합 택시 필요</td><td>유아시트 없음 (별도 지참 권장)</td></tr>
+<tr><td>렌터카</td><td>9인 → 11인승 승합차 필요</td><td>자유롭지만 주차 어려움 (해운대 성수기)</td></tr>
+<tr><td>KTX</td><td>경주 등 근교 이동</td><td>가능, 유모차 보관 공간 있음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>유모차 접근성 상세</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>부산 지하철:</strong> 엘리베이터·에스컬레이터 완비, 유모차 진입 문제없음.</li>
+<li><strong>해운대 해수욕장 주변:</strong> 보도 정비, 유모차 무난.</li>
+<li><strong>감천문화마을:</strong> 급경사 골목 다수 — <strong>유모차 사용 어려움</strong>, 아기띠 권장.</li>
+<li><strong>자갈치시장 내부:</strong> 좁은 통로, 유모차 불편 — 입구 보관 후 입장 고려.</li>
+<li><strong>롯데워터파크:</strong> 유모차 파킹 구역 있음, 내부는 평탄.</li>
+<li><strong>태종대 다누비열차:</strong> 유모차 탑승 가능 (현지 확인 필요).</li>
+</ul>
+<div class='spacer'></div>
+<h3>일본어/영어 안내 유무</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>장소</th><th>일본어 안내</th><th>영어 안내</th></tr></thead><tbody>
+<tr><td>부산 지하철</td><td>방송 안내 있음</td><td>있음</td></tr>
+<tr><td>국립해양박물관</td><td>부분</td><td>있음</td></tr>
+<tr><td>부산아쿠아리움</td><td>있음</td><td>있음</td></tr>
+<tr><td>해운대 주요 식당</td><td>일부 메뉴판</td><td>일부</td></tr>
+<tr><td>자갈치시장</td><td>일부</td><td>일부</td></tr>
+<tr><td>감천문화마을</td><td>안내판 일부</td><td>있음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>가이드 실무 팁</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>언어 지원:</strong> 한국인 4명이 현지 소통 담당. 일본인 5명 위해 파파고(네이버) 앱 설치 권장.</li>
+<li><strong>단체 이동:</strong> 성인 5+아이 4명 = 9명. 지하철 이동 시 아이마다 보호자 1명씩 배치 원칙.</li>
+<li><strong>화장실 위치 파악:</strong> 만 2세 유아 포함이므로 각 관광지 유아용 기저귀 교환대 위치 사전 확인.</li>
+<li><strong>이동 속도:</strong> 9명 그룹 이동은 개인 대비 2~3배 시간 소요. 일정 여유롭게 배치 필수.</li>
+<li><strong>비상 연락:</strong> 부산 관광 안내 전화 1330 (한·영·일·중 지원), 응급 119.</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<p><em>본 보고서는 일반 지식 기반으로 작성되었으며, 입장료·운영시간·예약 정책 등 변동 가능한 정보는 반드시 현지 및 공식 채널에서 재확인하시기 바랍니다.</em>  </p>
+<p><em>불확실 정보: 롯데워터파크 구체 요금, 각 호텔 수영장 어린이 정책, 2026년 장마 종료 시점 — 모두 현지 확인 필요.</em></p>
+<div class='spacer'></div></section>
+  <section class="chapter" id="02-itinerary"><div class="chapter-header"><span class="icon">📅</span><h2>여행 일정표</h2></div><h1>부산 3박4일 가족+외국인 그룹 여행 일정표</h1>
+<div class='spacer'></div>
+<p><strong>작성일:</strong> 2026-04-19  </p>
+<p><strong>담당 에이전트:</strong> itinerary-designer  </p>
+<p><strong>여행 기간:</strong> 2026년 7월 29일(수) ~ 8월 1일(토), 3박4일  </p>
+<p><strong>인원:</strong> 성인 5명 + 아이 4명(만 2~12세), 총 9명  </p>
+<p><strong>그룹:</strong> 한국인 4명 + 일본인 5명 (일본인 부산 첫 방문)</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>일정 개요</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>날짜</th><th>테마</th><th>핵심 활동</th><th>주요 지역</th></tr></thead><tbody>
+<tr><td>Day 1</td><td>7/29(수)</td><td>이동·도착·체크인</td><td>해운대 도착, 저녁 산책</td><td>해운대</td></tr>
+<tr><td>Day 2</td><td>7/30(목)</td><td>물놀이 핵심</td><td>롯데워터파크 기장</td><td>기장</td></tr>
+<tr><td>Day 3</td><td>7/31(금)</td><td>부산 관광·미식</td><td>대표 명소 + 야경</td><td>해운대·남포동·영도</td></tr>
+<tr><td>Day 4</td><td>8/1(토)</td><td>체크아웃·귀가</td><td>마지막 식사, 출발</td><td>해운대</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>이동 동선 원칙</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>숙소 → 워터파크(기장):</strong> 약 40분 (렌터카 11인승 또는 승합택시 추천)</li>
+<li><strong>숙소 → 남포동·자갈치:</strong> 약 30분 (지하철 해운대역 → 남포역 직통)</li>
+<li><strong>낙잠 구간(오후 1~3시):</strong> 전일정 실내 또는 숙소 휴식 배치</li>
+<li><strong>이동 최소화:</strong> 지역별로 묶어서 동선 효율화, 1일 최대 이동 2회 이내</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>Day 1 — 7월 29일(수) | 이동·도착·체크인</h2>
+<div class='spacer'></div>
+<p><strong>테마:</strong> 이동 피로 최소화, 해운대 첫인상</p>
+<div class='spacer'></div>
+<h3>시간표</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시간</th><th>일정</th><th>장소</th><th>비고</th></tr></thead><tbody>
+<tr><td>AM 09:00~11:00</td><td>출발 (일본발 항공/페리 도착 기준 조율)</td><td>김해공항 or 부산항 국제여객터미널</td><td>일본인 5명 합류 포인트 확인</td></tr>
+<tr><td>AM 11:00~12:00</td><td>공항/항구 → 숙소 이동</td><td>해운대 방면</td><td>11인승 렌터카 or 승합택시 2대</td></tr>
+<tr><td>PM 12:00~13:00</td><td>체크인 (얼리체크인 요청) or 짐 맡기고 점심</td><td>숙소 인근 식당</td><td>아이 많으면 배달 주문도 OK</td></tr>
+<tr><td><strong>PM 13:00~15:00</strong></td><td><strong>낮잠·휴식 (필수)</strong></td><td>숙소</td><td>만 2세 낮잠 / 일행 자유 휴식</td></tr>
+<tr><td>PM 15:00~17:30</td><td>해운대 해수욕장 산책 & 모래사장 물놀이</td><td>해운대 해수욕장</td><td>유모차 가능, 파도 얕은 구역</td></tr>
+<tr><td>PM 17:30~18:30</td><td>숙소 복귀·샤워·저녁 준비</td><td>숙소</td><td></td></tr>
+<tr><td>PM 18:30~20:30</td><td>저녁 식사 (첫날 환영 식사)</td><td>해운대 근방 한식 레스토랑</td><td>일본인용 아이 메뉴 확인</td></tr>
+<tr><td>PM 20:30~21:30</td><td>해운대 야경 산책 (달맞이길 or 해변)</td><td>해운대</td><td>유모차 가능, 짧게</td></tr>
+<tr><td>PM 21:30</td><td>취침 준비</td><td>숙소</td><td>내일 워터파크 대비 조기 취침 권장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Day 1 예상 비용 (9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>공항→숙소 이동 (승합택시 2대)</td><td>약 6~8만원</td></tr>
+<tr><td>점심 (간단한 한식 또는 배달)</td><td>약 10~15만원</td></tr>
+<tr><td>저녁 (환영 식사, 한식)</td><td>약 20~30만원</td></tr>
+<tr><td>음료·간식</td><td>약 3~5만원</td></tr>
+<tr><td><strong>Day 1 합계</strong></td><td><strong>약 39~58만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Plan B — 우천·태풍 시</h3>
+<div class='spacer'></div>
+<ul>
+<li>해운대 해수욕장 산책 대신 → <strong>부산아쿠아리움</strong> 실내 관람 (사전 예약 권장)</li>
+<li>야경 산책 취소 → 숙소에서 한국 야식 배달 (치킨·족발·피자 등) 체험</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>Day 2 — 7월 30일(목) | 워터파크 핵심 일정</h2>
+<div class='spacer'></div>
+<p><strong>테마:</strong> 아이들의 날! 롯데워터파크 기장 All-Day</p>
+<div class='spacer'></div>
+<p>> <strong>사전 예약 필수:</strong> 성수기 매진 잦음. 공식 홈페이지에서 방문 2~3개월 전 단체 예약 완료 필수.</p>
+<div class='spacer'></div>
+<h3>시간표</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시간</th><th>일정</th><th>장소</th><th>비고</th></tr></thead><tbody>
+<tr><td>AM 07:00~08:00</td><td>기상·조식 (호텔 뷔페 or 편의점)</td><td>숙소</td><td>간단하게, 이동 대비</td></tr>
+<tr><td>AM 08:00~08:45</td><td>숙소 → 롯데워터파크 이동</td><td>기장 방면</td><td>11인승 렌터카 추천 (주차 편의)</td></tr>
+<tr><td>AM 09:00~11:30</td><td>오전 물놀이 (오픈런)</td><td>롯데워터파크</td><td>유아풀·파도풀 — 혼잡 전 입장</td></tr>
+<tr><td>AM 11:30~12:30</td><td>워터파크 내 점심 식사</td><td>파크 내 식당</td><td>아이 메뉴, 짐 보관 후 이동</td></tr>
+<tr><td><strong>PM 12:30~14:00</strong></td><td><strong>파크 내 그늘 휴식 (낮잠)</strong></td><td>파크 내 파라솔·휴게 구역</td><td>만 2세 낮잠 — 유모차 or 리클라이너 활용</td></tr>
+<tr><td>PM 14:00~17:00</td><td>오후 물놀이 (워터슬라이드·유수풀)</td><td>롯데워터파크</td><td>큰 아이 위주, 만 2세 유아풀</td></tr>
+<tr><td>PM 17:00~17:30</td><td>샤워·탈의·짐 수습</td><td>파크 내 샤워실</td><td>아이 옷 갈아입히기 시간 충분히</td></tr>
+<tr><td>PM 17:30~18:30</td><td>워터파크 → 기장 시내 or 숙소 이동</td><td></td><td></td></tr>
+<tr><td>PM 18:30~20:00</td><td>저녁 식사 (기장 대게·해산물)</td><td>기장 해산물 식당</td><td>아이 고려, 맑은 국물류 병행</td></tr>
+<tr><td>PM 20:00~21:00</td><td>숙소 복귀</td><td></td><td></td></tr>
+<tr><td>PM 21:00</td><td>취침 (피로 높음, 조기 취침)</td><td>숙소</td><td></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Day 2 예상 비용 (9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>롯데워터파크 입장료 성인 5명 (약 7만원×5)</td><td>약 35만원</td></tr>
+<tr><td>롯데워터파크 입장료 아이 4명 (약 5만원×4)</td><td>약 20만원</td></tr>
+<tr><td>렌터카 (11인승, 하루)</td><td>약 15~20만원</td></tr>
+<tr><td>파크 내 점심</td><td>약 10~15만원</td></tr>
+<tr><td>저녁 (기장 해산물)</td><td>약 25~40만원</td></tr>
+<tr><td>음료·간식·선크림 등</td><td>약 5만원</td></tr>
+<tr><td><strong>Day 2 합계</strong></td><td><strong>약 110~135만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Plan B — 우천·워터파크 폐장 시</h3>
+<div class='spacer'></div>
+<ul>
+<li>롯데워터파크 폐장 → <strong>호텔 수영장</strong> 이용 (숙소 내)</li>
+<li>오전: <strong>국립해양박물관</strong> (무료, 실내, 유모차 가능, 일·영 안내)</li>
+<li>오후: <strong>부산아쿠아리움</strong> (해운대, 실내, 전연령)</li>
+<li>저녁: 해운대 맛집 투어</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>Day 3 — 7월 31일(금) | 부산 관광·미식 (일본인 첫 방문 코스)</h2>
+<div class='spacer'></div>
+<p><strong>테마:</strong> 일본인이 좋아하는 부산 대표 명소 + 저녁 야경</p>
+<div class='spacer'></div>
+<p>> 동선: 숙소(해운대) → 남포동·자갈치 → 국제시장 → 용두산공원 → 광안리 야경</p>
+<div class='spacer'></div>
+<h3>시간표</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시간</th><th>일정</th><th>장소</th><th>유모차</th><th>비고</th></tr></thead><tbody>
+<tr><td>AM 07:30~09:00</td><td>기상·조식 (호텔 뷔페)</td><td>숙소</td><td>—</td><td>여유롭게</td></tr>
+<tr><td>AM 09:00~10:30</td><td>해운대 해변 아침 산책 + 카페</td><td>해운대 해변로</td><td>가능</td><td>시원한 오전 활용</td></tr>
+<tr><td>AM 10:30~11:30</td><td>숙소 → 남포동 이동 (지하철)</td><td>해운대역 → 남포역</td><td>엘리베이터 완비</td><td></td></tr>
+<tr><td>AM 11:30~12:30</td><td>자갈치시장 구경 (간략)</td><td>자갈치시장 입구</td><td>입구만</td><td>유모차: 입구에서 관람, 내부 협소</td></tr>
+<tr><td>PM 12:30~13:30</td><td>점심 (남포동 밀면·국밥·분식)</td><td>남포동 일대</td><td>—</td><td>부산 향토 음식 체험</td></tr>
+<tr><td><strong>PM 13:30~15:00</strong></td><td><strong>숙소 복귀 or 카페 낮잠 휴식</strong></td><td>인근 키즈카페 or 카페</td><td>—</td><td>만 2세 낮잠 / 일행 쇼핑</td></tr>
+<tr><td>PM 15:00~16:00</td><td>국제시장·BIFF 광장</td><td>중구 신창동</td><td>가능</td><td>일본어 안내판 일부, K-뷰티 쇼핑</td></tr>
+<tr><td>PM 16:00~17:00</td><td>용두산공원·부산타워 전망</td><td>용두산공원</td><td>가능 (엘리베이터)</td><td>시내 전망, 인증사진 포인트</td></tr>
+<tr><td>PM 17:00~18:00</td><td>남포동 → 해운대 복귀 (지하철)</td><td></td><td>가능</td><td></td></tr>
+<tr><td>PM 18:00~19:00</td><td>숙소 휴식·샤워</td><td>숙소</td><td>—</td><td></td></tr>
+<tr><td>PM 19:00~21:00</td><td>저녁 식사 (해운대 고급 한식 or 회)</td><td>해운대 인근</td><td>—</td><td>일본인 환영, 회·해물파전 추천</td></tr>
+<tr><td>PM 21:00~22:00</td><td>광안대교 야경 (광안리 해변 산책)</td><td>광안리 해변</td><td>가능</td><td>부산 랜드마크, 야경 필수</td></tr>
+<tr><td>PM 22:00</td><td>숙소 복귀 및 취침</td><td>숙소</td><td>—</td><td></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>감천문화마을 제외 이유</h3>
+<div class='spacer'></div>
+<ul>
+<li>급경사 골목 다수, 만 2세 유모차 접근 어려움</li>
+<li>오후 낮잠 이후 시간 활용 시 체력 소진 우려</li>
+<li><strong>대안:</strong> 영도 흰여울문화마을 (경사 일부이나 비교적 완만, 짧게 방문 가능)  </li>
+</ul>
+<p>  단, 이동 시간 감안해 옵션으로만 고려</p>
+<div class='spacer'></div>
+<h3>Day 3 예상 비용 (9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>교통비 (지하철 왕복, 9명)</td><td>약 3~5만원</td></tr>
+<tr><td>점심 (부산 향토음식)</td><td>약 15~20만원</td></tr>
+<tr><td>용두산공원 케이블카 (선택)</td><td>약 2~3만원</td></tr>
+<tr><td>간식·쇼핑 (K-뷰티, 기념품)</td><td>약 10~30만원</td></tr>
+<tr><td>저녁 (해운대 한식·회)</td><td>약 30~50만원</td></tr>
+<tr><td><strong>Day 3 합계</strong></td><td><strong>약 60~108만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Plan B — 우천 시</h3>
+<div class='spacer'></div>
+<ul>
+<li>야외 관광 단축 → <strong>롯데백화점 센텀시티</strong> 실내 쇼핑·키즈존</li>
+<li>자갈치시장 스킵 → <strong>국립해양박물관</strong> (무료, 실내, 일본어 안내)</li>
+<li>야경 취소 → 숙소 인근 베이커리 카페 야간 이용</li>
+<li><strong>센텀시티 코스:</strong> 롯데백화점(쇼핑) + 신세계면세점 + CGV IMAX (일행 일부)</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>Day 4 — 8월 1일(토) | 체크아웃·마지막 식사·출발</h2>
+<div class='spacer'></div>
+<p><strong>테마:</strong> 여유로운 마무리, 출국/귀가 대비</p>
+<div class='spacer'></div>
+<p>> 토요일 성수기 = 도로 혼잡. 공항/항구 이동은 여유 있게 계획.</p>
+<div class='spacer'></div>
+<h3>시간표</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시간</th><th>일정</th><th>장소</th><th>비고</th></tr></thead><tbody>
+<tr><td>AM 07:00~09:00</td><td>기상·조식·짐 정리</td><td>숙소</td><td>체크아웃 준비</td></tr>
+<tr><td>AM 09:00~10:00</td><td>호텔 체크아웃 (짐 맡기기)</td><td>숙소</td><td>짐 보관 후 가볍게 이동</td></tr>
+<tr><td>AM 10:00~11:30</td><td>해운대 마지막 해변 산책 or 카페</td><td>해운대 해변로</td><td>기념사진 촬영</td></tr>
+<tr><td>AM 11:30~13:00</td><td>마지막 점심 (해운대 해물찜·돼지국밥)</td><td>해운대 인근</td><td>부산 마지막 미식</td></tr>
+<tr><td>PM 13:00~14:00</td><td>숙소 짐 픽업</td><td>숙소</td><td></td></tr>
+<tr><td>PM 14:00~15:00</td><td>숙소 → 공항/항구 이동</td><td>김해공항 or 부산항</td><td>성수기 도로 혼잡 고려 2시간 전 출발</td></tr>
+<tr><td>PM 15:00~</td><td>각자 귀가·출국</td><td></td><td>일본인 → 부산항 or 김해공항</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>일본인 출국 루트</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>루트</th><th>소요시간</th><th>추천도</th></tr></thead><tbody>
+<tr><td>부산항 국제여객터미널 → 하카타항(후쿠오카) 쾌속선</td><td>약 3시간</td><td>★★★★ (가장 편리)</td></tr>
+<tr><td>김해공항 → 후쿠오카 항공</td><td>약 40분 비행</td><td>★★★★</td></tr>
+<tr><td>김해공항 → 오사카·도쿄</td><td>약 1~1.5시간 비행</td><td>★★★</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>Day 4 예상 비용 (9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>점심 (마지막 부산 미식)</td><td>약 20~30만원</td></tr>
+<tr><td>교통비 (숙소→공항/항구)</td><td>약 5~8만원</td></tr>
+<tr><td>기념품·면세 쇼핑 (공항)</td><td>개인별 상이</td></tr>
+<tr><td><strong>Day 4 합계</strong></td><td><strong>약 25~38만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>전체 예산 요약</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>예산</th></tr></thead><tbody>
+<tr><td>숙박 (3박, 1박 100만원 이하)</td><td>약 250~300만원</td></tr>
+<tr><td>Day 1 식비·교통</td><td>약 39~58만원</td></tr>
+<tr><td>Day 2 워터파크+식비+렌터카</td><td>약 110~135만원</td></tr>
+<tr><td>Day 3 관광+식비+교통</td><td>약 60~108만원</td></tr>
+<tr><td>Day 4 식비+교통</td><td>약 25~38만원</td></tr>
+<tr><td>예비비 (10%)</td><td>약 50만원</td></tr>
+<tr><td><strong>총 합계 (9명)</strong></td><td><strong>약 534~689만원</strong></td></tr>
+<tr><td><strong>1인당 평균</strong></td><td><strong>약 59~77만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 항공/페리 비용(일본발), 개인 쇼핑·면세 구매는 별도. 숙박은 1박 100만원 이하 기준 (성수기 2객실 합산).</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>패킹 리스트 (9명 가족 여행, 아이 포함)</h2>
+<div class='spacer'></div>
+<h3>공통 필수 준비물</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>카테고리</th><th>항목</th></tr></thead><tbody>
+<tr><td>서류·결제</td><td>여권(만료일 6개월 이상), 비자(불필요), 여행자보험증서, 신용카드·체크카드(해외결제 가능), 현금(원화·엔화)</td></tr>
+<tr><td>건강·위생</td><td>상비약(해열제, 지사제, 구급용품), 영유아 상비약(시럽형), 모기 기피제, 핸드크림, 마스크, 선크림(SPF50+ 필수)</td></tr>
+<tr><td>통신</td><td>로밍 or 현지 유심(일본인 5명 필수), 충전기·멀티탭, 보조배터리</td></tr>
+<tr><td>앱</td><td>카카오택시, 파파고(번역), 네이버지도, 날씨앱, 롯데워터파크 공식앱</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>아이용 필수 준비물 (특히 만 2세)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>카테고리</th><th>항목</th></tr></thead><tbody>
+<tr><td>유모차</td><td>경량 유모차 (접이식 권장), 유모차 레인커버 (우천 대비)</td></tr>
+<tr><td>수면</td><td>휴대용 아기 침대 or 수면 텐트, 애착 인형·이불</td></tr>
+<tr><td>식사</td><td>아기 이유식·간식, 젖병·분유(해당 시), 아기 수저</td></tr>
+<tr><td>수영·워터파크</td><td>수영복 (전원), 구명조끼(유아용, 파크 대여 가능하나 사전 확인), 래시가드, 워터슈즈, 방수 기저귀, 기저귀 가방, 물놀이 장난감</td></tr>
+<tr><td>위생</td><td>기저귀 넉넉히, 물티슈, 손소독제, 아기 선크림(무기자차 SPF50+)</td></tr>
+<tr><td>의류</td><td>여벌 옷 (아이 1일 2벌 이상), 모자, 아기띠(감천문화마을 등 유모차 불편 구역용)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>날씨·여름 필수</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>수량</th></tr></thead><tbody>
+<tr><td>자외선 차단 모자</td><td>전원</td></tr>
+<tr><td>선글라스 (아이용 포함)</td><td>전원</td></tr>
+<tr><td>우산·우비</td><td>접이식 우산 5개 이상 + 아이용 우비 4개</td></tr>
+<tr><td>쿨링 스프레이·아이스팩</td><td>3~5개</td></tr>
+<tr><td>텀블러·물병</td><td>전원 (성인 1L 이상)</td></tr>
+<tr><td>여름용 슬리퍼·샌들</td><td>전원 (워터파크·해변용)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>편의 준비물 (9명 단체)</h3>
+<div class='spacer'></div>
+<ul>
+<li>자외선 차단 텐트 (해변 모래사장용, 영유아 그늘 확보)</li>
+<li>방수 비치 가방 (워터파크 귀중품 보관용)</li>
+<li>구급 키트 (밴드, 항생제 연고, 체온계)</li>
+<li>여분 비닐봉지 (젖은 수영복, 기저귀 처리)</li>
+<li>미아 방지 손목밴드 또는 GPS 트래커 (아이 4명)</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>예약 체크리스트</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>예약 시기</th><th>방법</th></tr></thead><tbody>
+<tr><td>숙소 (2객실 3박)</td><td><strong>즉시 예약</strong></td><td>공식 홈페이지, 호텔스닷컴, 네이버 예약</td></tr>
+<tr><td>롯데워터파크</td><td>지금~2개월 전</td><td>공식 홈페이지 단체 예약</td></tr>
+<tr><td>항공/페리 (일본발)</td><td>지금~2개월 전</td><td>JR큐슈 쾌속선, 카멜리아라인, 각 항공사</td></tr>
+<tr><td>11인승 렌터카 (Day 2)</td><td>1~2개월 전</td><td>롯데렌터카, SK렌터카, 현지 업체</td></tr>
+<tr><td>인기 식당 (저녁)</td><td>방문 1~2주 전</td><td>네이버 예약, 카카오 예약</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<p><em>본 일정표는 권장 플랜이며, 현지 날씨·아이 컨디션·그룹 체력에 따라 유연하게 조정하세요. 여유 30% 이상 확보가 가족 여행의 핵심입니다.</em></p>
+<div class='spacer'></div></section>
+  <section class="chapter" id="03-accommodation"><div class="chapter-header"><span class="icon">🏨</span><h2>숙소 가이드</h2></div><h1>부산 3박4일 숙소 가이드</h1>
+<div class='spacer'></div>
+<p><strong>작성일:</strong> 2026-04-19  </p>
+<p><strong>담당 에이전트:</strong> itinerary-designer  </p>
+<p><strong>여행 기간:</strong> 2026년 7월 29일(수) ~ 8월 1일(토), 3박  </p>
+<p><strong>인원:</strong> 성인 5명 + 아이 4명(만 2~12세), 총 9명  </p>
+<p><strong>숙박 예산:</strong> 1박 100만원 이하 (성수기 기준)</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>숙소 선택 기준</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>우선순위</th><th>기준</th><th>이유</th></tr></thead><tbody>
+<tr><td>1</td><td>9명 수용 (2객실 이상 또는 대형 패밀리룸)</td><td>단체 구성</td></tr>
+<tr><td>2</td><td>수영장 보유 (야외 or 실내)</td><td>아이들 필수</td></tr>
+<tr><td>3</td><td>해운대/기장/센텀 지역</td><td>워터파크·관광 동선 효율</td></tr>
+<tr><td>4</td><td>1박 100만원 이하 (2객실 합산 기준)</td><td>예산</td></tr>
+<tr><td>5</td><td>유모차 접근성, 어린이 편의시설</td><td>만 2세 포함</td></tr>
+<tr><td>6</td><td>일본어 서비스 가능</td><td>일본인 5명</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>추천 숙소 옵션 (상세)</h2>
+<div class='spacer'></div>
+<h3>★★★★★ 옵션 1 — 웨스틴 조선 부산 (최우선 추천)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>해운대구 동백로 67 (해운대 해수욕장 바로 앞)</td></tr>
+<tr><td>등급</td><td>5성급 럭셔리</td></tr>
+<tr><td>수영장</td><td><strong>야외 수영장</strong> (해변 인접, 성수기 운영)</td></tr>
+<tr><td>9명 구성</td><td>디럭스 더블 또는 트윈 2객실 예약 (패밀리 패키지 문의)</td></tr>
+<tr><td>성수기 예상가</td><td>객실당 40~60만원 × 2실 = <strong>1박 80~120만원</strong></td></tr>
+<tr><td>유모차</td><td>로비·엘리베이터 완비, 해변 인접 산책 가능</td></tr>
+<tr><td>일본어 서비스</td><td>영어 기반, 일본어 가능 직원 다수 (일본인 고객 多)</td></tr>
+<tr><td>장점</td><td>해운대 해수욕장 도보 1분, 조식 뷔페 수준 높음, 어린이 풀 별도 운영(현지 확인)</td></tr>
+<tr><td>단점</td><td>성수기 객실 조기 마감, 가격 예산 상한선에 근접</td></tr>
+<tr><td>예약 팁</td><td>공식 홈페이지 직접 예약 시 무료 취소 정책 확인, 패밀리 특가 패키지 문의</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h3>★★★★★ 옵션 2 — 파라다이스 호텔 부산</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>해운대구 해운대해변로 296 (해운대 해수욕장 인접)</td></tr>
+<tr><td>등급</td><td>5성급 리조트형</td></tr>
+<tr><td>수영장</td><td><strong>야외 풀 + 실내 수영장</strong> (카지노 별관 있으나 호텔 투숙객 수영장 구분)</td></tr>
+<tr><td>9명 구성</td><td>디럭스 2실 or 스위트 1실 + 디럭스 1실</td></tr>
+<tr><td>성수기 예상가</td><td>객실당 45~70만원 × 2실 = <strong>1박 90~140만원</strong></td></tr>
+<tr><td>유모차</td><td>완비, 리조트 내부 유모차 이동 편리</td></tr>
+<tr><td>일본어 서비스</td><td>일본어 안내 가능 (일본인 여행자 비율 높음)</td></tr>
+<tr><td>장점</td><td>리조트 규모 크고 부대시설 풍부, 어린이 프로그램 문의 가능</td></tr>
+<tr><td>단점</td><td>카지노 시설로 인한 19세 미만 일부 구역 출입 제한 주의</td></tr>
+<tr><td>예약 팁</td><td>성수기 패키지 (조식 포함 + 수영장 이용권 합산) 코스트 효율 좋음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h3>★★★★ 옵션 3 — 힐튼 부산 (가성비 추천)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>해운대구 중동1로 24 (해운대 해수욕장 도보 5분)</td></tr>
+<tr><td>등급</td><td>5성급</td></tr>
+<tr><td>수영장</td><td><strong>야외 인피니티풀</strong> (해운대 해경 조망, 성수기 혼잡)</td></tr>
+<tr><td>9명 구성</td><td>킹 or 트윈 디럭스 2실</td></tr>
+<tr><td>성수기 예상가</td><td>객실당 35~55만원 × 2실 = <strong>1박 70~110만원</strong></td></tr>
+<tr><td>유모차</td><td>가능, 엘리베이터 완비</td></tr>
+<tr><td>일본어 서비스</td><td>영어 기반, 파파고 앱 보완</td></tr>
+<tr><td>장점</td><td>인피니티풀 경관 우수, 해운대역 도보권, 조식 뷔페 품질 좋음</td></tr>
+<tr><td>단점</td><td>인피니티풀 성수기 혼잡, 유아용 풀 별도 없음</td></tr>
+<tr><td>예약 팁</td><td>힐튼 아너스 멤버십 포인트 활용 가능, 얼리버드 할인 확인</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h3>★★★★ 옵션 4 — 노보텔 앰배서더 부산 (센텀시티)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>해운대구 센텀남대로 30 (센텀시티 신세계백화점 인접)</td></tr>
+<tr><td>등급</td><td>4성급</td></tr>
+<tr><td>수영장</td><td><strong>실내 수영장</strong> (연중 운영, 아이 이용 가능)</td></tr>
+<tr><td>9명 구성</td><td>슈피리어 or 디럭스 2실</td></tr>
+<tr><td>성수기 예상가</td><td>객실당 20~35만원 × 2실 = <strong>1박 40~70만원</strong></td></tr>
+<tr><td>유모차</td><td>완비, 쇼핑몰 연결 이동 편리</td></tr>
+<tr><td>일본어 서비스</td><td>영어 기반</td></tr>
+<tr><td>장점</td><td><strong>예산 여유 가장 큼</strong>, 센텀시티 쇼핑 연계, 실내 수영장으로 날씨 무관</td></tr>
+<tr><td>단점</td><td>해운대 해수욕장까지 도보 약 20분 (셔틀 or 택시 이용)</td></tr>
+<tr><td>예약 팁</td><td>가족 패키지(2박 이상 할인) 문의 권장, 어코르 멤버십 활용</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h3>★★★★ 옵션 5 — 해운대 그랜드 호텔</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>위치</td><td>해운대구 해운대해변로 (해운대 해수욕장 인접)</td></tr>
+<tr><td>등급</td><td>4성급</td></tr>
+<tr><td>수영장</td><td><strong>야외 수영장</strong> (성수기 운영)</td></tr>
+<tr><td>9명 구성</td><td>트윈 or 더블 2실</td></tr>
+<tr><td>성수기 예상가</td><td>객실당 25~45만원 × 2실 = <strong>1박 50~90만원</strong></td></tr>
+<tr><td>유모차</td><td>가능</td></tr>
+<tr><td>일본어 서비스</td><td>일부 가능</td></tr>
+<tr><td>장점</td><td>가격 대비 입지 우수, 해수욕장 접근성 최상, 오래된 해운대 명소</td></tr>
+<tr><td>단점</td><td>시설 노후화, 수영장 규모 소형</td></tr>
+<tr><td>예약 팁</td><td>네이버 호텔 예약 또는 직접 전화 예약 시 단체 할인 문의</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>숙소 선택 시나리오별 추천</h2>
+<div class='spacer'></div>
+<h3>시나리오 A — 최고 만족 (예산 유연)</h3>
+<p><strong>웨스틴 조선 부산</strong> 2실 = 1박 80~120만원  </p>
+<p>→ 해변 바로 앞, 수영장, 일본어 서비스, 럭셔리 경험</p>
+<div class='spacer'></div>
+<h3>시나리오 B — 균형 (예산 내 최선)</h3>
+<p><strong>힐튼 부산</strong> 2실 = 1박 70~110만원  </p>
+<p>→ 인피니티풀, 해운대 근접, 조식 품질 우수</p>
+<div class='spacer'></div>
+<h3>시나리오 C — 가성비 (예산 여유 확보)</h3>
+<p><strong>노보텔 앰배서더 센텀</strong> 2실 = 1박 40~70만원  </p>
+<p>→ 실내 수영장(날씨 무관), 절약한 예산으로 워터파크·미식 강화</p>
+<div class='spacer'></div>
+<h3>시나리오 D — 워터파크 연계 (기장 지역)</h3>
+<p><strong>롯데호텔 부산 기장</strong> (롯데리조트 기장) 2실  </p>
+<p>→ 롯데워터파크 도보권, 리조트 내 수영장, Day 2 이동 최소화  </p>
+<p>→ 단, 해운대 관광 이동 거리 증가 (차량 필수)</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>숙소 구성 상세 가이드</h2>
+<div class='spacer'></div>
+<h3>2객실 구성 추천 조합</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구성</th><th>객실 1</th><th>객실 2</th><th>적합 인원</th></tr></thead><tbody>
+<tr><td>안 A</td><td>킹 디럭스 (성인 커플)</td><td>트윈/패밀리 (아이+성인)</td><td>부모 커플 + 아이들 가족 분리</td></tr>
+<tr><td>안 B</td><td>트윈 디럭스 (성인 2명)</td><td>패밀리룸 (성인 3명+아이 4명)</td><td>한국인/일본인 그룹 분리</td></tr>
+<tr><td>안 C</td><td>스위트 1실</td><td>스탠다드 1실</td><td>예산 집중 + 절약 병행</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>추천:</strong> 안 B — 한국인 4명 + 일본인 5명 = 문화·언어 편의 상 그룹별 분리가 숙면에 유리</p>
+<div class='spacer'></div>
+<h3>커넥팅룸(연결 객실) 문의 필수</h3>
+<div class='spacer'></div>
+<ul>
+<li>9명 가족 여행 시 <strong>커넥팅룸 또는 인접 객실</strong> 확보 강력 권장</li>
+<li>예약 시 호텔에 직접 전화하여 "커넥팅룸 요청" 명시 (인터넷 예약만으로는 미보장)</li>
+<li>이른 체크인·늦은 체크아웃 사전 요청 (성수기 추가 요금 발생 가능)</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>수영장 보유 호텔 비교</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>호텔</th><th>수영장 유형</th><th>유아 적합성</th><th>운영 기간</th><th>성수기 혼잡도</th></tr></thead><tbody>
+<tr><td>웨스틴 조선 부산</td><td>야외</td><td>중상</td><td>6~9월</td><td>높음</td></tr>
+<tr><td>파라다이스 호텔</td><td>야외+실내</td><td>중상</td><td>연중(실내)</td><td>매우 높음</td></tr>
+<tr><td>힐튼 부산</td><td>야외 인피니티풀</td><td>중 (유아풀 없음)</td><td>5~10월</td><td>높음</td></tr>
+<tr><td>노보텔 앰배서더 센텀</td><td>실내</td><td>중상</td><td>연중</td><td>보통</td></tr>
+<tr><td>해운대 그랜드</td><td>야외</td><td>중</td><td>6~9월</td><td>보통</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>우천·태풍 리스크 대비:</strong> 실내 수영장 보유 호텔(노보텔 앰배서더 센텀, 파라다이스) 우선 고려</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>예약 플랫폼 및 취소 정책 팁</h2>
+<div class='spacer'></div>
+<h3>예약 플랫폼 비교</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>플랫폼</th><th>장점</th><th>단점</th><th>추천 상황</th></tr></thead><tbody>
+<tr><td><strong>호텔 공식 홈페이지</strong></td><td>최저가 보장 정책, 커넥팅룸 요청 가능, 멤버십 혜택</td><td>비교 불편</td><td>특정 호텔 확정 시</td></tr>
+<tr><td><strong>네이버 호텔</strong></td><td>국내 결제 편리, 리뷰 신뢰도 높음</td><td>해외 호텔 제한</td><td>국내 예약 기본</td></tr>
+<tr><td><strong>호텔스닷컴 (Hotels.com)</strong></td><td>10박 1박 무료, 가격 비교 편리</td><td>취소 정책 복잡</td><td>가격 비교 후</td></tr>
+<tr><td><strong>부킹닷컴 (Booking.com)</strong></td><td>무료 취소 옵션 많음, 일본어 인터페이스 지원</td><td>—</td><td>일본인 동행 예약 시</td></tr>
+<tr><td><strong>에어비앤비</strong></td><td>9인 한 공간 가능, 주방 활용</td><td>수영장 없음, 서비스 없음</td><td>예산 최우선 시</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>취소 정책 핵심 팁</h3>
+<div class='spacer'></div>
+<ol>
+<li><strong>무료 취소 기간 확인:</strong> 성수기 인기 호텔은 체크인 7~14일 전부터 취소 수수료 발생</li>
+<li><strong>태풍 특약:</strong> 예약 시 "불가항력(태풍·자연재해) 취소 정책" 별도 확인</li>
+<li><strong>비환불 요금 주의:</strong> 저렴한 비환불(Non-Refundable) 요금은 성수기 날씨 리스크 고려 시 비추천</li>
+<li><strong>여행자 보험 연계:</strong> 숙박 취소 보험 특약 가입 시 비환불 객실도 보호 가능</li>
+<li><strong>직접 전화 예약:</strong> 단체 9명 예약 시 호텔에 직접 전화하면 그룹 할인·특전 협상 가능</li>
+</ol>
+<div class='spacer'></div>
+<h3>성수기 예약 타임라인</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시기</th><th>행동</th></tr></thead><tbody>
+<tr><td><strong>지금 즉시</strong></td><td>숙소 예약 완료 (7월 말 해운대 인기 호텔 매진 임박)</td></tr>
+<tr><td><strong>지금 즉시</strong></td><td>롯데워터파크 단체 예약 문의 (성수기 매진 잦음)</td></tr>
+<tr><td><strong>2026년 5월</strong></td><td>일본발 항공/페리 예약 완료</td></tr>
+<tr><td><strong>2026년 5월~6월</strong></td><td>11인승 렌터카 예약 (Day 2 기장 이동용)</td></tr>
+<tr><td><strong>2026년 7월 중순</strong></td><td>핵심 저녁 식당 예약 (네이버/카카오 예약)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>추가 숙박 옵션 — 예산 절약형</h2>
+<div class='spacer'></div>
+<h3>게스트하우스·풀빌라 조합</h3>
+<div class='spacer'></div>
+<ul>
+<li>아이가 있는 가족: <strong>해운대 인근 풀빌라</strong> (독채 사용, 수영장 포함)</li>
+<li>예시: 해운대 독채 풀빌라 (에어비앤비 등) — 9명 수용, 1박 60~100만원</li>
+<li>장점: 전용 풀, 아이 자유롭게, 주방 사용 가능</li>
+<li>단점: 호텔 서비스 없음, 위생·안전 직접 확인 필요</li>
+</ul>
+<div class='spacer'></div>
+<h3>기장 지역 숙소 (워터파크 연계)</h3>
+<div class='spacer'></div>
+<ul>
+<li><strong>롯데리조트 기장:</strong> 워터파크 연계 패키지, 리조트 내 수영장</li>
+<li>해운대보다 이동 40분 추가 (Day 3 관광 시 불리)</li>
+<li>성수기 가격: 1박 70~120만원</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>일본인 동행을 위한 숙소 선택 포인트</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>체크포인트</th><th>확인 방법</th></tr></thead><tbody>
+<tr><td>일본어 가능 프런트 직원 유무</td><td>예약 시 호텔에 직접 문의</td></tr>
+<tr><td>비데 완비 여부</td><td>5성급 호텔 대부분 완비</td></tr>
+<tr><td>일본어 조식 메뉴 안내</td><td>현지 도착 후 확인</td></tr>
+<tr><td>전압·콘센트</td><td>한국 220V, 일본 110V → <strong>멀티어댑터 필수 (일본인 지참)</strong></td></tr>
+<tr><td>Wi-Fi 속도</td><td>대형 호텔 무료 Wi-Fi 기본 제공</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>최종 추천 요약</h2>
+<div class='spacer'></div>
+<h3>1순위 (예산 내 최고 만족)</h3>
+<p><strong>힐튼 부산</strong> — 2객실 × 35~55만원 = <strong>1박 70~110만원</strong>  </p>
+<p>해운대 근접 + 인피니티풀 + 합리적 가격</p>
+<div class='spacer'></div>
+<h3>2순위 (럭셔리 우선)</h3>
+<p><strong>웨스틴 조선 부산</strong> — 2객실 × 40~60만원 = <strong>1박 80~120만원</strong>  </p>
+<p>해변 바로 앞 + 야외 수영장 + 최고 서비스</p>
+<div class='spacer'></div>
+<h3>3순위 (예산 여유 확보)</h3>
+<p><strong>노보텔 앰배서더 센텀</strong> — 2객실 × 20~35만원 = <strong>1박 40~70만원</strong>  </p>
+<p>실내 수영장 + 절약 가능 + 쇼핑 연계</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<p>> <strong>긴급 행동 요청:</strong> 7월 29일 ~ 8월 1일 해운대 인기 호텔은 현재 시점(2026년 4월)에서도 마감 임박 가능성 높음. 숙소 예약을 최우선으로 처리하세요.</p>
+<div class='spacer'></div>
+<p><em>본 가이드의 가격은 일반 참고 수치이며, 실제 성수기 요금은 달라질 수 있습니다. 반드시 각 호텔 공식 채널에서 최신 요금과 취소 정책을 확인하세요.</em></p>
+<div class='spacer'></div></section>
+  <section class="chapter" id="04-budget"><div class="chapter-header"><span class="icon">💰</span><h2>예산 계획서</h2></div><h1>부산 3박4일 가족+외국인 여행 예산 계획서</h1>
+<div class='spacer'></div>
+<p><strong>작성일:</strong> 2026-04-19  </p>
+<p><strong>담당 에이전트:</strong> budget-manager  </p>
+<p><strong>여행 기간:</strong> 2026년 7월 29일(수) ~ 8월 1일(토), 3박4일  </p>
+<p><strong>인원:</strong> 성인 5명 + 아이 4명(만 2~12세), 총 9명  </p>
+<p><strong>그룹:</strong> 한국인 4명 + 일본인 5명  </p>
+<p><strong>기준 통화:</strong> 원화(KRW), 불확실 항목은 범위로 표시</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>1. 예산 총괄표</h2>
+<div class='spacer'></div>
+<h3>전체 합계 (9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>절약형</th><th>보통형</th><th>럭셔리형</th></tr></thead><tbody>
+<tr><td><strong>숙박 (3박, 2객실)</strong></td><td>120만원</td><td>240만원</td><td>360만원</td></tr>
+<tr><td><strong>식비 (4일, 9명)</strong></td><td>130만원</td><td>200만원</td><td>320만원</td></tr>
+<tr><td><strong>국내 교통 (현지)</strong></td><td>30만원</td><td>55만원</td><td>80만원</td></tr>
+<tr><td><strong>한국인 서울↔부산 교통</strong></td><td>30만원</td><td>45만원</td><td>65만원</td></tr>
+<tr><td><strong>일본인 → 부산 항공/페리</strong></td><td>100만원</td><td>175만원</td><td>300만원</td></tr>
+<tr><td><strong>롯데워터파크 입장료</strong></td><td>40만원</td><td>53만원</td><td>65만원</td></tr>
+<tr><td><strong>기타 관광 입장료</strong></td><td>5만원</td><td>12만원</td><td>20만원</td></tr>
+<tr><td><strong>간식·음료·기타</strong></td><td>15만원</td><td>30만원</td><td>50만원</td></tr>
+<tr><td><strong>예비비 (약 10%)</strong></td><td>47만원</td><td>81만원</td><td>126만원</td></tr>
+<tr><td><strong>합계 (9명 총액)</strong></td><td><strong>517만원</strong></td><td><strong>891만원</strong></td><td><strong>1,386만원</strong></td></tr>
+<tr><td><strong>1인당 평균</strong></td><td><strong>약 57만원</strong></td><td><strong>약 99만원</strong></td><td><strong>약 154만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>주의:</strong> 일본인 개인 쇼핑·면세 구매, 공항 면세점 지출은 별도 (개인 부담).  </p>
+<p>> 일본인 교통비는 출발지(후쿠오카/오사카/도쿄)에 따라 크게 상이함.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>2. 숙박 비용 (3박, 2객실)</h2>
+<div class='spacer'></div>
+<h3>성수기 (7월 말~8월) 기준</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>호텔 등급</th><th>호텔명 (예시)</th><th>1박 2객실 합계</th><th>3박 합계</th><th>등급</th></tr></thead><tbody>
+<tr><td>절약형</td><td>노보텔 앰배서더 센텀</td><td>40~70만원</td><td><strong>120~210만원</strong></td><td>절약형</td></tr>
+<tr><td>보통형</td><td>힐튼 부산</td><td>70~110만원</td><td><strong>210~330만원</strong></td><td>보통형</td></tr>
+<tr><td>럭셔리형</td><td>웨스틴 조선 부산 / 파라다이스 호텔</td><td>80~140만원</td><td><strong>240~420만원</strong></td><td>럭셔리형</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>숙박 예산 계획 (시나리오별)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>시나리오</th><th>선택 숙소</th><th>3박 총액</th><th>특징</th></tr></thead><tbody>
+<tr><td><strong>절약형</strong></td><td>노보텔 앰배서더 센텀 2실</td><td>120~210만원</td><td>실내 수영장, 쇼핑 연계</td></tr>
+<tr><td><strong>보통형</strong></td><td>힐튼 부산 2실</td><td>210~330만원</td><td>인피니티풀, 해운대 근접</td></tr>
+<tr><td><strong>럭셔리형</strong></td><td>웨스틴 조선 부산 2실</td><td>240~360만원</td><td>해변 바로 앞, 야외 수영장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p><strong>추천:</strong> 보통형 — 힐튼 부산 2객실 (3박 평균 약 <strong>240만원</strong>)</p>
+<div class='spacer'></div>
+<h3>숙박 관련 추가 비용 예상</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>얼리 체크인 요청 (Day 1)</td><td>0~5만원</td></tr>
+<tr><td>레이트 체크아웃 요청 (Day 4)</td><td>0~5만원</td></tr>
+<tr><td>커넥팅룸 추가 요금 (호텔별 상이)</td><td>0~10만원</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>3. 식비 (9명, 4일 기준)</h2>
+<div class='spacer'></div>
+<p>> 아이 4명 중 만 2세는 부모와 음식 나눔 가능, 만 5~12세 아이는 성인의 60~70% 수준으로 계산.</p>
+<div class='spacer'></div>
+<h3>끼니별 예상 식비 (9명 합계)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>날짜</th><th>식사</th><th>내용</th><th>절약형</th><th>보통형</th><th>럭셔리형</th></tr></thead><tbody>
+<tr><td>Day 1 (7/29)</td><td>점심</td><td>한식·배달, 해운대 인근</td><td>8만원</td><td>13만원</td><td>18만원</td></tr>
+<tr><td>Day 1 (7/29)</td><td>저녁</td><td>환영 한식 (갈비·삼겹살 등)</td><td>15만원</td><td>25만원</td><td>40만원</td></tr>
+<tr><td>Day 2 (7/30)</td><td>조식</td><td>편의점·빵집 간편식</td><td>5만원</td><td>10만원</td><td>15만원</td></tr>
+<tr><td>Day 2 (7/30)</td><td>점심</td><td>워터파크 내 식당</td><td>10만원</td><td>15만원</td><td>22만원</td></tr>
+<tr><td>Day 2 (7/30)</td><td>저녁</td><td>기장 해산물·대게</td><td>20만원</td><td>35만원</td><td>55만원</td></tr>
+<tr><td>Day 3 (7/31)</td><td>조식</td><td>호텔 뷔페 (포함 시 무료)</td><td>0원</td><td>0원</td><td>18만원</td></tr>
+<tr><td>Day 3 (7/31)</td><td>점심</td><td>부산 밀면·돼지국밥·분식</td><td>9만원</td><td>15만원</td><td>20만원</td></tr>
+<tr><td>Day 3 (7/31)</td><td>저녁</td><td>해운대 회·고급 한식</td><td>25만원</td><td>40만원</td><td>65만원</td></tr>
+<tr><td>Day 4 (8/1)</td><td>조식</td><td>호텔 체크아웃 전 뷔페 or 편의점</td><td>5만원</td><td>10만원</td><td>15만원</td></tr>
+<tr><td>Day 4 (8/1)</td><td>점심</td><td>해물찜·돼지국밥 마지막 부산 미식</td><td>13만원</td><td>22만원</td><td>32만원</td></tr>
+<tr><td><strong>식비 소계</strong></td><td></td><td></td><td><strong>110만원</strong></td><td><strong>185만원</strong></td><td><strong>300만원</strong></td></tr>
+<tr><td>간식·카페·음료 (4일 합계)</td><td></td><td>아이스크림·길거리 음식 등</td><td>15만원</td><td>30만원</td><td>50만원</td></tr>
+<tr><td><strong>식비 + 간식 합계</strong></td><td></td><td></td><td><strong>125만원</strong></td><td><strong>215만원</strong></td><td><strong>350만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>아이 할인 적용 기준</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>연령</th><th>할인율</th><th>비고</th></tr></thead><tbody>
+<tr><td>만 2세</td><td>거의 무료 (부모 음식 나눔)</td><td>별도 주문 최소화</td></tr>
+<tr><td>만 5~7세</td><td>어린이 메뉴 또는 성인 60%</td><td>식당별 어린이 메뉴 있음</td></tr>
+<tr><td>만 10~12세</td><td>성인 70~80%</td><td>식당 어린이 메뉴 or 성인 메뉴 소량</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>4. 교통비</h2>
+<div class='spacer'></div>
+<h3>4-1. 한국인 서울 ↔ 부산 왕복</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>교통수단</th><th>편도</th><th>왕복 (1인)</th><th>4명 왕복 합계</th><th>소요시간</th></tr></thead><tbody>
+<tr><td>KTX (일반실)</td><td>5~6만원</td><td>10~12만원</td><td>40~48만원</td><td>2시간 30분</td></tr>
+<tr><td>KTX (특실)</td><td>8~9만원</td><td>16~18만원</td><td>64~72만원</td><td>2시간 30분</td></tr>
+<tr><td>고속버스</td><td>2.5~3만원</td><td>5~6만원</td><td>20~24만원</td><td>4~4.5시간</td></tr>
+<tr><td>항공 (김포↔김해)</td><td>5~12만원</td><td>10~24만원</td><td>40~96만원</td><td>1시간</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p><strong>추천:</strong> KTX 일반실 (성수기 사전예매 필수, 아이 만 12세 미만 50% 할인 적용)</p>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>인원</th><th>편도 요금</th><th>왕복 합계</th></tr></thead><tbody>
+<tr><td>성인</td><td>4명</td><td>5.5만원</td><td>44만원</td></tr>
+<tr><td>아이 (만 6세~12세, 50% 할인)</td><td>3명</td><td>2.75만원</td><td>16.5만원</td></tr>
+<tr><td>아이 (만 2세~5세, 75% 할인)</td><td>1명</td><td>1.4만원</td><td>2.8만원</td></tr>
+<tr><td><strong>KTX 왕복 합계 (한국인 4명 + 아이 기준)</strong></td><td></td><td></td><td><strong>약 63만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 만 4세 이하는 좌석 없이 무릎에 앉으면 무료이나, 장거리 이동 시 좌석 구매 권장.</p>
+<div class='spacer'></div>
+<h3>4-2. 일본인 5명 → 부산 왕복 (★ 별도 항목)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>출발지</th><th>이동 수단</th><th>편도 (1인 기준)</th><th>5명 왕복 합계</th><th>소요시간</th></tr></thead><tbody>
+<tr><td><strong>후쿠오카</strong></td><td>쾌속선 (비틀/코비)</td><td>2~4만원</td><td>20~40만원</td><td>약 3시간</td></tr>
+<tr><td><strong>후쿠오카</strong></td><td>JR 쾌속페리 카멜리아</td><td>1.5~3만원</td><td>15~30만원</td><td>약 6시간 (야간 가능)</td></tr>
+<tr><td><strong>후쿠오카</strong></td><td>항공 (후쿠오카↔김해)</td><td>4~10만원</td><td>40~100만원</td><td>약 40분 비행</td></tr>
+<tr><td><strong>오사카</strong></td><td>항공 (간사이↔김해)</td><td>6~15만원</td><td>60~150만원</td><td>약 1시간 비행</td></tr>
+<tr><td><strong>도쿄</strong></td><td>항공 (하네다/나리타↔김해)</td><td>10~25만원</td><td>100~250만원</td><td>약 1.5시간 비행</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p><strong>절약형 추천:</strong> 후쿠오카 출발 쾌속선 (비틀호) — 5명 왕복 약 <strong>20~40만원</strong>  </p>
+<p><strong>편의성 추천:</strong> 후쿠오카 출발 항공 — 5명 왕복 약 <strong>40~100만원</strong></p>
+<div class='spacer'></div>
+<p>> 일본인 5명 도착 포인트: <strong>부산항 국제여객터미널</strong> (페리) 또는 <strong>김해공항</strong> (항공)</p>
+<div class='spacer'></div>
+<h3>4-3. 현지 교통비 (부산 내, 9명 기준)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th><th>예상 금액</th></tr></thead><tbody>
+<tr><td>공항/항구 → 숙소 (Day 1)</td><td>승합택시 2대 or 11인승 밴</td><td>6~10만원</td></tr>
+<tr><td>지하철 (Day 1·3)</td><td>해운대↔남포동 왕복 9명</td><td>3~5만원</td></tr>
+<tr><td>11인승 렌터카 (Day 2, 기장)</td><td>1일 대여 + 주유</td><td>15~25만원</td></tr>
+<tr><td>기장→숙소 (Day 2 저녁)</td><td>렌터카 포함</td><td>포함</td></tr>
+<tr><td>택시·이동 예비 (Day 3·4)</td><td>소형 그룹 이동용</td><td>5~10만원</td></tr>
+<tr><td>숙소 → 공항/항구 (Day 4)</td><td>승합택시 또는 리무진 버스</td><td>5~8만원</td></tr>
+<tr><td><strong>현지 교통 소계</strong></td><td></td><td><strong>34~58만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>5. 롯데워터파크 입장료 (9명 기준)</h2>
+<div class='spacer'></div>
+<p>> 기준: 2026년 성수기 (7~8월) 예상 가격 / 공식 홈페이지 기준으로 변동 가능</p>
+<div class='spacer'></div>
+<h3>연령별 입장료 기준</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>조건</th><th>성수기 예상 단가</th><th>비고</th></tr></thead><tbody>
+<tr><td>대인 (성인)</td><td>만 13세 이상</td><td>65,000~75,000원</td><td>성수기 피크 요금</td></tr>
+<tr><td>소인 (어린이)</td><td>만 3~12세</td><td>50,000~60,000원</td><td>성수기 피크 요금</td></tr>
+<tr><td>유아</td><td>만 2세 이하</td><td><strong>무료</strong></td><td>키 90cm 미만</td></tr>
+<tr><td>경로</td><td>만 65세 이상</td><td>40,000~50,000원</td><td>해당자 확인 필요</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>우리 그룹 입장료 산출 (9명)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>인원</th><th>단가</th><th>소계</th></tr></thead><tbody>
+<tr><td>성인 (5명)</td><td>5명</td><td>70,000원</td><td>350,000원</td></tr>
+<tr><td>아이 만 12세 (소인)</td><td>1명</td><td>55,000원</td><td>55,000원</td></tr>
+<tr><td>아이 만 10세 (소인)</td><td>1명</td><td>55,000원</td><td>55,000원</td></tr>
+<tr><td>아이 만 5세 (소인)</td><td>1명</td><td>55,000원</td><td>55,000원</td></tr>
+<tr><td>아이 만 2세 (무료)</td><td>1명</td><td>0원</td><td>0원</td></tr>
+<tr><td><strong>합계</strong></td><td><strong>9명</strong></td><td></td><td><strong>515,000원 (약 52만원)</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 절약형: 온라인 사전예매 할인 적용 시 약 <strong>40~45만원</strong>  </p>
+<p>> 보통형: 현장 구매 또는 패키지 가격 약 <strong>52~55만원</strong>  </p>
+<p>> 럭셔리형: 단체 프리미엄 패키지 (캐비나 포함) 약 <strong>65~80만원</strong></p>
+<div class='spacer'></div>
+<h3>워터파크 추가 비용</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>락커 이용료 (대형 1개)</td><td>1~2만원</td></tr>
+<tr><td>구명조끼 대여 (유아용)</td><td>0.5~1만원</td></tr>
+<tr><td>파라솔·캐비나 대여 (선택)</td><td>5~15만원</td></tr>
+<tr><td>파크 내 점심 식사 (9명)</td><td>10~22만원</td></tr>
+<tr><td>간식·음료 (파크 내)</td><td>3~7만원</td></tr>
+<tr><td><strong>워터파크 관련 총비용</strong></td><td><strong>약 70~102만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>6. 관광 입장료 (Day 3 명소)</h2>
+<div class='spacer'></div>
+<h3>Day 3 — 부산 관광 명소 입장료</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>무료 여부</th><th>성인 (1인)</th><th>아이 (1인)</th><th>9명 합계</th></tr></thead><tbody>
+<tr><td>자갈치시장</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td>국제시장</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td>BIFF 광장</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td>용두산공원</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td>부산타워 전망대</td><td>유료</td><td>8,000원</td><td>5,000원</td><td>60,000원</td></tr>
+<tr><td>케이블카 (용두산)</td><td>유료</td><td>3,000원</td><td>2,000원</td><td>23,000원</td></tr>
+<tr><td>해운대 해수욕장</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td>광안리 해변·광안대교 야경</td><td><strong>무료</strong></td><td>0원</td><td>0원</td><td>0원</td></tr>
+<tr><td><strong>합계</strong></td><td></td><td></td><td></td><td><strong>약 8만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 부산타워 성인 8,000원, 소인(만 7~12세) 5,000원, 유아(만 6세 이하) 무료  </p>
+<p>> 실제 운영 가격은 방문 전 공식 홈페이지 재확인 필요</p>
+<div class='spacer'></div>
+<h3>Plan B 대비 — 우천 시 실내 명소 입장료</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>성인 (1인)</th><th>아이 (1인)</th><th>9명 합계</th></tr></thead><tbody>
+<tr><td>부산아쿠아리움</td><td>30,000원</td><td>24,000원</td><td>246,000원</td></tr>
+<tr><td>국립해양박물관</td><td><strong>무료</strong></td><td>0원</td><td>0원</td></tr>
+<tr><td>롯데백화점 센텀시티</td><td><strong>무료</strong></td><td>0원</td><td>0원</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>7. 일본인 5명 특별 항목</h2>
+<div class='spacer'></div>
+<h3>7-1. 일본 → 부산 이동 경로 및 비용</h3>
+<div class='spacer'></div>
+<h4>후쿠오카 출발 (가장 추천)</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>이동 수단</th><th>운항사/서비스명</th><th>편도 1인</th><th>5명 편도</th><th>5명 왕복</th><th>장단점</th></tr></thead><tbody>
+<tr><td>쾌속선</td><td>JR 비틀 (JR Beetle)</td><td>15,000~25,000엔 (13~22만원)</td><td>65~110만원</td><td>130~220만원</td><td>빠름(3시간), 예약 필수</td></tr>
+<tr><td>쾌속선</td><td>코비 (KOBEE)</td><td>12,000~20,000엔 (11~18만원)</td><td>55~90만원</td><td>110~180만원</td><td>비교적 저렴</td></tr>
+<tr><td>야간 페리</td><td>카멜리아라인</td><td>8,000~15,000엔 (7~13만원)</td><td>35~65만원</td><td>70~130만원</td><td>숙박비 절약, 저렴</td></tr>
+<tr><td>항공</td><td>각 LCC (젯스타 등)</td><td>10,000~30,000엔 (9~27만원)</td><td>45~135만원</td><td>90~270만원</td><td>빠름, 가격 변동 큼</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 1엔 ≈ 9원 기준 (2026년 4월 환율 참고, 실제 환율 변동 주의)</p>
+<div class='spacer'></div>
+<h4>오사카 출발</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>이동 수단</th><th>편도 1인</th><th>5명 왕복</th></tr></thead><tbody>
+<tr><td>항공 (간사이→김해)</td><td>15,000~50,000엔 (13~45만원)</td><td>130~450만원</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>도쿄 출발</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>이동 수단</th><th>편도 1인</th><th>5명 왕복</th></tr></thead><tbody>
+<tr><td>항공 (하네다/나리타→김해)</td><td>20,000~80,000엔 (18~72만원)</td><td>180~720만원</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>7-2. 일본인 현지 통신</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>방법</th><th>비용 (1인)</th><th>5명 합계</th></tr></thead><tbody>
+<tr><td>한국 유심 (7일)</td><td>인터넷 사전 구매 또는 공항 구매</td><td>1~2만원</td><td>5~10만원</td></tr>
+<tr><td>포켓 Wi-Fi 렌탈</td><td>공항에서 대여</td><td>1~1.5만원/일 × 4일</td><td>4~6만원 (1대 공유 가능)</td></tr>
+<tr><td>일본 로밍</td><td>통신사 해외 로밍</td><td>0.3~0.8만원/일</td><td>1.2~3.2만원/인</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p><strong>추천:</strong> 1인당 한국 유심 구매 (1~2만원) — 가장 경제적</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>8. 절약 팁</h2>
+<div class='spacer'></div>
+<h3>8-1. 성수기 할인 방법</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>방법</th><th>절약 금액</th><th>적용 항목</th></tr></thead><tbody>
+<tr><td>KTX 조기 예매 (출발 1개월 전)</td><td>15~30% 할인</td><td>서울↔부산 KTX</td></tr>
+<tr><td>롯데워터파크 온라인 사전예매</td><td>10~20% 할인</td><td>입장권</td></tr>
+<tr><td>카드사 제휴 할인 (롯데/BC/신한 등)</td><td>5~15% 할인</td><td>워터파크, 식당, 호텔</td></tr>
+<tr><td>호텔 직접 예약 (공식 홈페이지)</td><td>최저가 보장 + 조식 포함 혜택</td><td>숙박</td></tr>
+<tr><td>아코르/힐튼 멤버십 포인트 사용</td><td>1박 무료 가능</td><td>숙박</td></tr>
+<tr><td>편의점·마트 조식 대체 (일부 날)</td><td>1인당 1~2만원 절약</td><td>조식</td></tr>
+<tr><td>포장 배달 주문 (숙소 내 식사)</td><td>외식 대비 20~30% 절약</td><td>일부 식사</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>8-2. 아이 무료/할인 입장 정보</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>명소</th><th>무료 조건</th><th>할인 조건</th></tr></thead><tbody>
+<tr><td>롯데워터파크</td><td><strong>만 2세 이하 (키 90cm 미만) 무료</strong></td><td>만 3~12세 소인 요금</td></tr>
+<tr><td>부산타워</td><td><strong>만 6세 이하 무료</strong></td><td>만 7~12세 소인 할인</td></tr>
+<tr><td>국립해양박물관</td><td><strong>전연령 무료</strong></td><td>—</td></tr>
+<tr><td>KTX</td><td><strong>만 4세 이하, 좌석 미사용 시 무료</strong></td><td>만 5~12세 50% 할인</td></tr>
+<tr><td>부산 지하철</td><td><strong>만 6세 이하 무료</strong></td><td>만 7~12세 할인</td></tr>
+<tr><td>자갈치·국제시장·광안리</td><td><strong>무료 (입장료 없음)</strong></td><td>—</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>9. 결제 수단 가이드</h2>
+<div class='spacer'></div>
+<h3>9-1. 한국인 최적 결제 방법</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>결제 수단</th><th>추천 상황</th><th>혜택</th></tr></thead><tbody>
+<tr><td><strong>삼성페이 / 카카오페이</strong></td><td>편의점, 식당, 대부분 가맹점</td><td>간편 결제, 일부 할인</td></tr>
+<tr><td><strong>신한카드 / 롯데카드</strong></td><td>롯데워터파크, 롯데 계열</td><td>최대 15% 할인, 캐시백</td></tr>
+<tr><td><strong>BC카드 트래블로그</strong></td><td>해외 여행자 카드 (국내도 사용)</td><td>수수료 없음</td></tr>
+<tr><td><strong>현금 (원화)</strong></td><td>재래시장 (자갈치, 국제시장), 소규모 식당</td><td>카드 미수납 업소 대비</td></tr>
+<tr><td><strong>네이버페이</strong></td><td>네이버 예약 식당 결제</td><td>포인트 적립</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>9-2. 일본인 최적 결제 방법</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>결제 수단</th><th>사용 가능 여부</th><th>추천도</th><th>주의사항</th></tr></thead><tbody>
+<tr><td><strong>Visa/Mastercard 신용카드</strong></td><td>✅ 대부분 가능</td><td>★★★★★</td><td>수수료 1.5~2% 발생, 사전 해외 결제 설정 필요</td></tr>
+<tr><td><strong>JCB 카드</strong></td><td>✅ 국내 주요 가맹점 가능</td><td>★★★★</td><td>일부 소규모 가게는 불가</td></tr>
+<tr><td><strong>PayPay / LINE Pay</strong></td><td>❌ 한국에서 원칙적 불가</td><td>—</td><td>한국에서 QR 결제 불가</td></tr>
+<tr><td><strong>Apple Pay / Google Pay</strong></td><td>✅ Visa/Mastercard 연동 시 가능</td><td>★★★★</td><td>지원 단말기 증가 중</td></tr>
+<tr><td><strong>원화 현금</strong></td><td>✅ 필수</td><td>★★★★★</td><td>소규모 시장, 재래시장 필수</td></tr>
+<tr><td><strong>엔화 현금</strong></td><td>❌ 직접 사용 불가</td><td>—</td><td>부산항 환전소에서 원화로 환전</td></tr>
+<tr><td><strong>알리페이 인터내셔널</strong></td><td>△ 일부 관광 가맹점</td><td>★★</td><td>사용처 제한적</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p><strong>일본인 권장 현금 보유:</strong> 1인당 원화 10~20만원 (환전 후 소지)  </p>
+<p><strong>환전 최적 장소:</strong></p>
+<ul>
+<li>일본 출발 전: 엔화→원화 환전 (일본 은행·환전소)</li>
+<li>부산 도착 후: 부산항 국제여객터미널 환전소 (수수료 확인) 또는 부산 시내 은행·환전소</li>
+</ul>
+<div class='spacer'></div>
+<p><strong>일본 카드 한국 사용 팁:</strong></p>
+<ul>
+<li>부산 대형 호텔, 백화점, 대형 식당 → Visa/Mastercard/JCB 대부분 사용 가능</li>
+<li>자갈치·국제시장 소규모 가게 → 현금 필수</li>
+<li>워터파크, 편의점, 대형 마트 → 해외 카드 대부분 가능</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>10. 일별 예산 요약</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>날짜</th><th>주요 지출</th><th>절약형</th><th>보통형</th><th>럭셔리형</th></tr></thead><tbody>
+<tr><td>Day 1 (7/29)</td><td>이동+점심+저녁+간식</td><td>30만원</td><td>50만원</td><td>75만원</td></tr>
+<tr><td>Day 2 (7/30)</td><td>워터파크+렌터카+식비</td><td>80만원</td><td>120만원</td><td>165만원</td></tr>
+<tr><td>Day 3 (7/31)</td><td>관광+교통+식비</td><td>45만원</td><td>80만원</td><td>125만원</td></tr>
+<tr><td>Day 4 (8/1)</td><td>점심+귀가 교통</td><td>20만원</td><td>35만원</td><td>55만원</td></tr>
+<tr><td><strong>일정 내 소계 (9명)</strong></td><td></td><td><strong>175만원</strong></td><td><strong>285만원</strong></td><td><strong>420만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>11. 전체 예산 최종 요약</h2>
+<div class='spacer'></div>
+<h3>보통형 기준 상세 내역 (가장 현실적 시나리오)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>금액</th></tr></thead><tbody>
+<tr><td>숙박 (힐튼 부산, 3박 2객실)</td><td>240만원</td></tr>
+<tr><td>식비 + 간식</td><td>215만원</td></tr>
+<tr><td>현지 교통 (렌터카+지하철+택시)</td><td>55만원</td></tr>
+<tr><td>한국인 KTX 왕복 (4명 + 아이 기준)</td><td>63만원</td></tr>
+<tr><td>일본인 항공/페리 (5명, 후쿠오카 출발 기준)</td><td>150만원</td></tr>
+<tr><td>롯데워터파크 입장 + 관련 비용</td><td>80만원</td></tr>
+<tr><td>부산 관광 입장료</td><td>10만원</td></tr>
+<tr><td>예비비 (약 10%)</td><td>86만원</td></tr>
+<tr><td><strong>총합계 (9명)</strong></td><td><strong>899만원</strong></td></tr>
+<tr><td><strong>1인당 평균</strong></td><td><strong>약 100만원</strong></td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> 일본 출발지에 따라 총액이 크게 달라집니다. 후쿠오카 출발 시 전체 비용이 가장 절약됩니다.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>12. 예약 우선순위 및 타임라인</h2>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>우선순위</th><th>예약 항목</th><th>예약 기한</th><th>방법</th></tr></thead><tbody>
+<tr><td>🔴 즉시</td><td><strong>숙소 2객실 (7/29~8/1)</strong></td><td>지금 즉시</td><td>공식 홈페이지 / 네이버 호텔</td></tr>
+<tr><td>🔴 즉시</td><td><strong>롯데워터파크 단체 입장</strong></td><td>지금~5월</td><td>롯데워터파크 공식 홈페이지</td></tr>
+<tr><td>🟡 빠르게</td><td><strong>한국인 KTX 왕복</strong></td><td>5월 중</td><td>코레일 앱</td></tr>
+<tr><td>🟡 빠르게</td><td><strong>일본인 항공/페리</strong></td><td>5월 중</td><td>각 항공사/JR비틀 공식 홈페이지</td></tr>
+<tr><td>🟢 여유</td><td><strong>11인승 렌터카 (Day 2)</strong></td><td>5~6월</td><td>롯데/SK 렌터카</td></tr>
+<tr><td>🟢 여유</td><td><strong>인기 저녁 식당</strong></td><td>7월 중순</td><td>네이버/카카오 예약</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<p><em>본 예산 계획서의 가격은 2026년 4월 기준 추정치입니다. 실제 가격은 성수기 수요, 환율 변동, 업체 정책에 따라 달라질 수 있습니다. 특히 롯데워터파크 성수기 요금과 호텔 가격은 반드시 공식 채널에서 최신 정보를 확인하세요.</em></p>
+<div class='spacer'></div></section>
+  <section class="chapter" id="05-local-guide"><div class="chapter-header"><span class="icon">🧭</span><h2>현지 정보 가이드</h2></div><h1>부산 현지 정보 가이드 — 가족+일본인 혼합 그룹용</h1>
+<div class='spacer'></div>
+<p><strong>작성일:</strong> 2026-04-19  </p>
+<p><strong>담당 에이전트:</strong> local-guide  </p>
+<p><strong>여행 기간:</strong> 2026년 7월 29일(수) ~ 8월 1일(토), 3박4일  </p>
+<p><strong>인원:</strong> 성인 5명 + 아이 4명(만 2~12세), 총 9명  </p>
+<p><strong>그룹:</strong> 한국인 4명 + 일본인 5명 (부산 첫 방문)</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>1. 일본인을 위한 부산 입문 정보</h2>
+<div class='spacer'></div>
+<h3>일본어·영어 안내 현황</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>일본어 안내 수준</th><th>비고</th></tr></thead><tbody>
+<tr><td>부산 지하철</td><td>우수</td><td>일본어 역명 안내 방송, 노선도 일본어 병기</td></tr>
+<tr><td>김해공항</td><td>우수</td><td>일본어 안내판·직원 응대 가능</td></tr>
+<tr><td>부산항 국제여객터미널</td><td>우수</td><td>일본어 안내 전담 창구 운영</td></tr>
+<tr><td>자갈치시장</td><td>보통</td><td>일본어 메뉴판·간판 다수 (일본인 관광객 많음)</td></tr>
+<tr><td>남포동·국제시장</td><td>보통</td><td>주요 가게 일본어 응대 가능</td></tr>
+<tr><td>해운대</td><td>보통</td><td>관광지 주요 식당·카페 일본어 메뉴 보유</td></tr>
+<tr><td>롯데워터파크 기장</td><td>보통</td><td>영어 안내 중심, 일본어 부분 지원</td></tr>
+<tr><td>용두산공원·부산타워</td><td>우수</td><td>일본어 안내판, 일본어 팸플릿 배포</td></tr>
+<tr><td>국립해양박물관</td><td>우수</td><td>일본어 도슨트·안내자료 완비</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>일본인 관광객이 많이 찾는 부산 포인트</h3>
+<div class='spacer'></div>
+<ol>
+<li><strong>남포동·자갈치시장</strong> — 부산 최대 재래시장, 일본 여행 잡지 단골 소개 구역</li>
+<li><strong>국제시장·BIFF 광장</strong> — 한국 드라마 촬영지, K-스트리트 푸드 집결지</li>
+<li><strong>용두산공원·부산타워</strong> — 전망대에서 일본 느낌의 항구 전경 감상</li>
+<li><strong>해운대 해수욕장</strong> — 일본 NHK 등 매체에서 자주 소개하는 한국 대표 해수욕장</li>
+<li><strong>광안대교 야경</strong> — 요코하마 베이브리지와 비교되는 야경 명소</li>
+<li><strong>기장 해산물 골목</strong> — 신선한 대게·멸치 요리, 일본인 미식가 방문 다수</li>
+<li><strong>롯데백화점 센텀시티</strong> — 세계 최대 백화점 중 하나, 면세점 내 일본 브랜드 다수</li>
+</ol>
+<div class='spacer'></div>
+<h3>일한 문화 차이 주의사항</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>한국</th><th>일본과의 차이</th></tr></thead><tbody>
+<tr><td>식당 호출</td><td>큰 소리로 "여기요!" 또는 테이블 벨 사용</td><td>일본처럼 조용히 기다리면 직원이 오지 않을 수 있음</td></tr>
+<tr><td>물·반찬</td><td>대부분 무료 제공</td><td>일본과 달리 한국은 반찬 무한 리필 가능</td></tr>
+<tr><td>팁 문화</td><td>팁 없음</td><td>한국에서 팁은 오히려 실례가 될 수 있음</td></tr>
+<tr><td>식사 중 이동</td><td>자유롭게 이동 가능</td><td>테이블 공유·이동에 덜 엄격</td></tr>
+<tr><td>계산 방식</td><td>식사 후 계산대에서 결제</td><td>테이블 계산이 아닌 카운터 결제가 일반적</td></tr>
+<tr><td>지하철 음식</td><td>음식물 반입 가능하나 자제</td><td>일본처럼 음식 반입 절대 금지는 아님</td></tr>
+<tr><td>에스컬레이터</td><td>부산은 오른쪽 서기 (서울과 반대로 혼재)</td><td>지역마다 다르니 현지 흐름 따라가기</td></tr>
+<tr><td>쓰레기 처리</td><td>지정 봉투 필요, 길거리 쓰레기통 드묾</td><td>편의점·카페에서 배출하거나 숙소 이용</td></tr>
+<tr><td>가격 흥정</td><td>재래시장에서 가능</td><td>백화점·편의점은 정찰제</td></tr>
+<tr><td>신발 착용</td><td>일부 한식당 좌식 공간은 신발 벗음</td><td>미리 확인 후 입장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>2. 교통 가이드</h2>
+<div class='spacer'></div>
+<h3>부산 지하철·버스 이용법</h3>
+<div class='spacer'></div>
+<h4>T-money 카드 (교통카드)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>구입처:</strong> 편의점(CU, GS25, 세븐일레븐), 지하철 역무실, 공항 내 안내소</li>
+<li><strong>충전:</strong> 편의점, 지하철 충전기(현금)</li>
+<li><strong>기본요금 (2026년 기준 예상):</strong> 지하철 1,450원, 버스 1,350원</li>
+<li><strong>환승 할인:</strong> 지하철↔버스 30분 이내 환승 시 추가 요금 없음</li>
+<li><strong>아이 요금:</strong> 만 6세 이하 무료, 만 6~12세 어린이 요금 적용</li>
+<li><strong>일본인 주의:</strong> 일본 Suica·PASMO 카드는 부산 대중교통에서 사용 불가. 반드시 T-money 또는 현금 준비</li>
+</ul>
+<div class='spacer'></div>
+<h4>유모차 접근성</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구간</th><th>접근성</th><th>비고</th></tr></thead><tbody>
+<tr><td>부산 지하철</td><td>양호</td><td>주요 역 엘리베이터 완비 (일부 구역역 제외)</td></tr>
+<tr><td>해운대역</td><td>우수</td><td>엘리베이터·에스컬레이터 완비</td></tr>
+<tr><td>남포역</td><td>우수</td><td>엘리베이터 이용 가능</td></tr>
+<tr><td>시내버스</td><td>불편</td><td>저상버스 일부 운행, 유모차 접기 필요한 경우 많음</td></tr>
+<tr><td>마을버스</td><td>불편</td><td>유모차 탑승 매우 어려움, 권장 안 함</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>팁:</strong> 지하철 역 진입 시 "장애인·유모차 엘리베이터" 안내판 따라 이동. 출입구 번호 사전 확인 추천.</p>
+<div class='spacer'></div>
+<h3>9명 이동 시 최적 교통수단</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>상황</th><th>추천 수단</th><th>이유</th></tr></thead><tbody>
+<tr><td>공항/항구 → 숙소</td><td>승합택시 2대 or 11인승 렌터카</td><td>짐 많고 아이 피로 고려</td></tr>
+<tr><td>숙소 → 롯데워터파크 (Day 2)</td><td>11인승 렌터카</td><td>워터파크 짐 많음, 주차 가능</td></tr>
+<tr><td>숙소 → 남포동 (Day 3)</td><td>지하철</td><td>해운대역 → 남포역 직통 (2호선·1호선 환승), 약 40분</td></tr>
+<tr><td>해운대 내 이동</td><td>도보 + 전동킥보드(성인)</td><td>해변로 1km 이내 도보 가능</td></tr>
+<tr><td>야간 귀가</td><td>카카오택시</td><td>늦은 시간 안전하고 편리</td></tr>
+<tr><td>Day 4 숙소 → 공항/항구</td><td>11인승 렌터카 or 승합택시 2대</td><td>짐 수거 후 이동</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>택시 이용 팁</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>카카오택시</strong> 앱으로 예약 (일본어 인터페이스 없으나 지도로 목적지 지정 가능)</li>
+<li><strong>대형택시(승합택시)</strong> 선택 시 6~8명 탑승 가능</li>
+<li><strong>국제시장·자갈치 주변</strong> 택시 잡기 어려울 수 있음 → 앱 예약 권장</li>
+<li><strong>모범택시(검은색):</strong> 일반 택시보다 20~30% 비쌈, 의사소통 더 원활한 경우 많음</li>
+</ul>
+<div class='spacer'></div>
+<h3>기장 롯데워터파크 이동 방법</h3>
+<div class='spacer'></div>
+<h4>렌터카 이용 (강력 추천)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>이동 시간:</strong> 해운대 숙소 → 워터파크 약 30~40분</li>
+<li><strong>주차:</strong> 워터파크 전용 주차장 (무료 또는 유료, 사전 확인)</li>
+<li><strong>11인승 카니발·스타리아 렌터카:</strong> 9명 + 유모차 + 짐 탑재 가능</li>
+<li><strong>예약:</strong> 롯데렌터카, SK렌터카, 제주렌터카 (사전 온라인 예약 필수)</li>
+</ul>
+<div class='spacer'></div>
+<h4>대중교통 이용 (참고용)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>동해선 전철:</strong> 센텀역 or 해운대역 → 기장역 하차 → 셔틀버스 또는 택시 이용</li>
+<li><strong>소요시간:</strong> 약 50분~1시간 (환승 포함)</li>
+<li><strong>단점:</strong> 유모차 + 대형 짐 + 9명 이동은 매우 불편. 성수기 혼잡 심함</li>
+<li><strong>결론:</strong> 9명 단체, 유모차, 워터파크 짐 고려 시 렌터카 필수</li>
+</ul>
+<div class='spacer'></div>
+<h3>추천 교통 앱</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>앱</th><th>용도</th><th>일본어 지원</th></tr></thead><tbody>
+<tr><td>네이버 지도 (Naver Map)</td><td>대중교통 경로, 도보 안내, 맛집 검색</td><td>한국어/영어</td></tr>
+<tr><td>카카오맵 (Kakao Map)</td><td>부산 지역 맛집·카페 리뷰, 실시간 교통</td><td>한국어</td></tr>
+<tr><td>카카오택시 (Kakao T)</td><td>택시 호출, 대형택시 예약</td><td>한국어 (영어 부분 지원)</td></tr>
+<tr><td>파파고 (Papago)</td><td>한↔일 번역, 카메라 번역</td><td>지원</td></tr>
+<tr><td>Google Maps</td><td>대중교통 + 영어 안내</td><td>영어/일본어</td></tr>
+<tr><td>부산 지하철 앱</td><td>부산 지하철 노선도, 시간표</td><td>한국어/영어</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>3. 지역별 맛집 가이드</h2>
+<div class='spacer'></div>
+<h3>자갈치시장·남포동 (Day 3 점심)</h3>
+<div class='spacer'></div>
+<h4>해산물·대표 음식</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>음식</th><th>특징</th><th>아이 적합도</th><th>일본인 인기</th></tr></thead><tbody>
+<tr><td>꽃게탕·꽃게찜</td><td>자갈치 대표 메뉴, 매콤한 양념</td><td>보통 (매운맛 주의)</td><td>높음</td></tr>
+<tr><td>생선회 (광어·우럭)</td><td>싱싱한 자갈치 직배 회</td><td>높음</td><td>매우 높음</td></tr>
+<tr><td>해물파전</td><td>부추·해산물 부침개</td><td>높음</td><td>높음</td></tr>
+<tr><td>밀면</td><td>부산 향토 냉면, 밀가루 면</td><td>높음</td><td>보통 (생소함)</td></tr>
+<tr><td>돼지국밥</td><td>부산 대표 국밥, 진한 육수</td><td>높음</td><td>보통</td></tr>
+<tr><td>씨앗호떡</td><td>남포동 명물 길거리 간식</td><td>매우 높음</td><td>높음</td></tr>
+<tr><td>어묵 (오뎅)</td><td>자갈치 시장 어묵 탕</td><td>매우 높음</td><td>매우 높음 (일본 오뎅과 유사)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>추천 식당 (남포동·자갈치 일대)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>자갈치시장 2층 횟집가:</strong> 자갈치시장 건물 2층, 직접 잡은 회 즉석 회뜨기</li>
+<li><strong>부산밀면 원조집 (남포동 인근):</strong> 부산식 밀면 전문, 아이 육수 따로 요청 가능</li>
+<li><strong>남포동 씨앗호떡 노점:</strong> 씨앗호떡 원조 지역, 줄 서서 먹는 명물</li>
+<li><strong>광복동 어묵 골목:</strong> 국물 어묵 포장·즉석 시식</li>
+</ul>
+<div class='spacer'></div>
+<h3>해운대 (Day 1·3 저녁, Day 4 점심)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>음식</th><th>특징</th><th>아이 적합도</th><th>일본인 인기</th></tr></thead><tbody>
+<tr><td>광어·우럭 회</td><td>해운대 해산물 전문점</td><td>높음</td><td>매우 높음</td></tr>
+<tr><td>조개구이</td><td>석쇠 위 생조개 구이, 버터·마늘 풍미</td><td>높음</td><td>높음</td></tr>
+<tr><td>해물찜</td><td>낙지·새우·꽃게 매콤 찜</td><td>보통 (매운맛)</td><td>높음</td></tr>
+<tr><td>돼지갈비 (BBQ)</td><td>한국식 바베큐, 테이블 그릴</td><td>매우 높음</td><td>매우 높음</td></tr>
+<tr><td>해운대 암소갈비</td><td>해운대 명물 소갈비</td><td>높음</td><td>높음</td></tr>
+<tr><td>빙수·카페 디저트</td><td>해운대 카페 거리, 망고빙수 등</td><td>매우 높음</td><td>높음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>추천 식당 (해운대)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>해운대 소문난 암소갈비집:</strong> 해운대역 근방, 갈비 전문, 예약 필수</li>
+<li><strong>해운대 조개구이 골목 (중동):</strong> 해운대 해수욕장 서쪽, 조개구이 전문점 밀집</li>
+<li><strong>누들누들·달팽이 (카페):</strong> 해운대 카페 거리, 빙수·파르페, 아이 동반 적합</li>
+<li><strong>해운대 전통시장 내 분식:</strong> 저렴하고 아이들도 좋아하는 분식류</li>
+</ul>
+<div class='spacer'></div>
+<h3>기장 (Day 2 저녁)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>음식</th><th>특징</th><th>아이 적합도</th><th>일본인 인기</th></tr></thead><tbody>
+<tr><td>기장 대게</td><td>기장 특산물, 찜·구이·회</td><td>높음</td><td>매우 높음</td></tr>
+<tr><td>멸치쌈밥</td><td>기장 바다 멸치 + 쌈채소 정식</td><td>높음</td><td>높음</td></tr>
+<tr><td>기장 미역</td><td>기장 특산 미역국·미역무침</td><td>높음</td><td>높음</td></tr>
+<tr><td>대구탕·생선조림</td><td>기장 근해 생선 탕류</td><td>높음</td><td>보통</td></tr>
+<tr><td>해물라면 (즉석)</td><td>기장 편의점·간이식당</td><td>매우 높음</td><td>높음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>추천 식당 (기장)</h4>
+<div class='spacer'></div>
+<ul>
+<li><strong>기장 대게 골목 (기장시장 인근):</strong> 기장역 근처, 대게 전문점 밀집</li>
+<li><strong>기장 죽성리 멸치쌈밥집:</strong> 기장 해안 드라이브 코스 포함, 멸치쌈밥 전문</li>
+<li><strong>롯데워터파크 내 식당:</strong> 워터파크 일정 시 이용 (가격 높은 편이나 편의성 우수)</li>
+</ul>
+<div class='spacer'></div>
+<h3>아이들이 좋아하는 메뉴</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>메뉴</th><th>장소</th><th>비고</th></tr></thead><tbody>
+<tr><td>씨앗호떡</td><td>남포동 노점</td><td>달콤·고소, 유아도 좋아함</td></tr>
+<tr><td>어묵(오뎅) 국물</td><td>시장·편의점</td><td>따뜻하고 간이 적당</td></tr>
+<tr><td>치킨 (야식)</td><td>배달 앱 (배달의민족)</td><td>한국 치킨은 전 연령 사랑</td></tr>
+<tr><td>짜장면·짬뽕</td><td>중화요리 식당</td><td>아이 메뉴 있는 곳 많음</td></tr>
+<tr><td>돼지갈비 BBQ</td><td>해운대 갈비집</td><td>아이도 잘 먹는 불고기류</td></tr>
+<tr><td>빙수·아이스크림</td><td>카페·편의점</td><td>여름철 필수</td></tr>
+<tr><td>김밥·분식</td><td>분식집</td><td>아이 편식 해결사</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>일본인 입맛에 맞는 추천 음식</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>추천 음식</th><th>이유</th></tr></thead><tbody>
+<tr><td>생선회 (활어회)</td><td>일본 회와 유사, 간장·와사비 제공</td></tr>
+<tr><td>어묵(오뎅)</td><td>일본 오뎅과 유사, 친숙한 맛</td></tr>
+<tr><td>된장찌개</td><td>일본 미소된장과 유사한 구조</td></tr>
+<tr><td>불고기</td><td>달콤한 간장 베이스, 일본인 선호</td></tr>
+<tr><td>냉면</td><td>메밀 가까운 느낌, 생소하지 않음</td></tr>
+<tr><td>삼겹살 구이</td><td>BBQ 형식으로 인기</td></tr>
+<tr><td>파전</td><td>오코노미야키와 유사</td></tr>
+<tr><td>식혜·수정과</td><td>달콤한 전통 음료, 거부감 적음</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>주의:</strong> 매운 음식에 익숙하지 않은 일본인이 많음. 주문 시 "안 맵게 해주세요 (あまり辛くしないでください)"를 요청하거나 상대적으로 덜 매운 메뉴 선택 권장.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>4. 어린이 동반 실용 정보</h2>
+<div class='spacer'></div>
+<h3>유모차 대여·보관 정보</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>장소</th><th>대여 가능 여부</th><th>보관 가능 여부</th><th>비고</th></tr></thead><tbody>
+<tr><td>롯데워터파크 기장</td><td>유모차 대여 가능 (유료)</td><td>물품보관함 있음</td><td>사전 예약 or 현장 대여, 성수기 조기 매진</td></tr>
+<tr><td>부산역</td><td>없음</td><td>코인로커</td><td>1층 코인로커 이용</td></tr>
+<tr><td>김해공항</td><td>없음</td><td>카트 이용 가능</td><td>유모차 직접 지참 권장</td></tr>
+<tr><td>지하철 역</td><td>없음</td><td>없음</td><td>개인 유모차 지참 필수</td></tr>
+<tr><td>국립해양박물관</td><td>유모차 대여 가능 (무료)</td><td>보관 가능</td><td>에코백 형태 유모차 대여</td></tr>
+<tr><td>자갈치시장</td><td>없음</td><td>없음</td><td>내부 협소, 안고 이동 권장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>권장:</strong> 일정 내내 개인 경량 유모차(접이식) 지참. 자갈치시장 등 협소 구역에서는 아기띠 병용.</p>
+<div class='spacer'></div>
+<h3>아이 급식·수유실 위치</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>장소</th><th>수유실·기저귀 교환대</th><th>비고</th></tr></thead><tbody>
+<tr><td>롯데워터파크</td><td>수유실·기저귀 교환대 완비</td><td>여러 곳에 분산 배치</td></tr>
+<tr><td>김해공항</td><td>수유실 완비 (국내선·국제선 각 층)</td><td>공항 안내 데스크에서 위치 안내</td></tr>
+<tr><td>부산항 국제여객터미널</td><td>수유실 있음</td><td>출국장 내</td></tr>
+<tr><td>롯데백화점 센텀시티</td><td>수유실 완비 (각 층 여자화장실 인근)</td><td>우수한 시설</td></tr>
+<tr><td>해운대 해수욕장 (인근)</td><td>공공화장실 기저귀 교환대 일부</td><td>모든 시설이 갖춰진 것은 아님</td></tr>
+<tr><td>국립해양박물관</td><td>수유실·교환대 완비</td><td>가족 친화 시설 우수</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>팁:</strong> 대형 카페·패밀리 레스토랑 내 화장실에 기저귀 교환대 설치된 경우 많음. 입장 전 직원에게 확인 권장.</p>
+<div class='spacer'></div>
+<h3>응급 의료 (어린이 병원·소아과)</h3>
+<div class='spacer'></div>
+<h4>해운대 인근 (숙소 주변)</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>의료기관</th><th>주소</th><th>전화</th><th>비고</th></tr></thead><tbody>
+<tr><td>해운대백병원</td><td>부산 해운대구 해운대로 875</td><td>051-797-0100</td><td>24시간 응급실, 소아과</td></tr>
+<tr><td>동아대병원 (해운대)</td><td>해운대구</td><td>051-240-2400</td><td>대형 종합병원</td></tr>
+<tr><td>해운대 어린이병원 (소아과 클리닉)</td><td>해운대구 일대</td><td>—</td><td>일반 소아과 진료</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>남포동·자갈치 인근</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>의료기관</th><th>주소</th><th>전화</th><th>비고</th></tr></thead><tbody>
+<tr><td>부산대학교병원</td><td>부산 서구 구덕로 179</td><td>051-240-7000</td><td>소아청소년과, 응급실 24시간</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h4>기장 (워터파크 Day 2)</h4>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>의료기관</th><th>주소</th><th>전화</th><th>비고</th></tr></thead><tbody>
+<tr><td>롯데워터파크 내 의무실</td><td>파크 내</td><td>—</td><td>경상 처치 가능</td></tr>
+<tr><td>기장군 보건소</td><td>기장군 기장읍</td><td>051-709-5000</td><td>평일 09:00~18:00</td></tr>
+<tr><td>고려병원 (기장)</td><td>기장군 인근</td><td>—</td><td>응급 시 이용</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>일본인 주의:</strong> 한국에서 치료 시 여행자보험 청구를 위한 영수증·진단서 반드시 발급 요청. 일본어 통역 필요 시 외국인 관광 지원 센터(1330) 연락.</p>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>5. 일본인 5명을 위한 특별 안내</h2>
+<div class='spacer'></div>
+<h3>부산에서 일본어 통용 구역</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구역</th><th>일본어 통용 수준</th><th>설명</th></tr></thead><tbody>
+<tr><td>남포동·자갈치</td><td>높음</td><td>일본인 방문객 최다 지역, 상인 일본어 구사 많음</td></tr>
+<tr><td>국제시장</td><td>보통~높음</td><td>주요 상점 일본어 응대 가능</td></tr>
+<tr><td>부산항 국제여객터미널</td><td>높음</td><td>일본 노선 전담 창구, 일본어 직원 상주</td></tr>
+<tr><td>해운대 주요 관광 식당</td><td>보통</td><td>일본어 메뉴판 보유 식당 많음</td></tr>
+<tr><td>롯데백화점·면세점</td><td>높음</td><td>일본어 쇼핑 어시스턴트 배치</td></tr>
+<tr><td>편의점·대형마트</td><td>낮음</td><td>영어·한국어 위주, 번역 앱 활용 권장</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>엔화·일본 카드 사용 가능 여부</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>엔화 현금 사용</td><td>불가 (한국 원화만 사용 가능)</td></tr>
+<tr><td>엔화 환전</td><td>김해공항, 부산역, 환전소, 은행 (하나은행, 신한은행 등)</td></tr>
+<tr><td>일본 신용카드 (VISA/Mastercard)</td><td>사용 가능 (대부분 가맹점)</td></tr>
+<tr><td>일본 JCB 카드</td><td>일부 가맹점 사용 가능 (롯데 계열 가맹점 등)</td></tr>
+<tr><td>일본 직불카드</td><td>일반적으로 해외 사용 불가, 사전 확인 필수</td></tr>
+<tr><td>PayPay·LINE Pay</td><td>한국 내 일반적으로 사용 불가</td></tr>
+<tr><td>카카오페이</td><td>일본인 관광객 대상 한정 적용처 늘고 있음, 사전 확인</td></tr>
+<tr><td>ATM 현금 인출</td><td>공항·편의점 ATM(7-Eleven, 롯데 ATM 등)에서 해외 카드 현금 인출 가능</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>권장:</strong> 일본에서 출발 전 원화 일부 환전 (후쿠오카 공항 환전율 양호). 부산 현지에서 추가 환전 시 남포동 환전소 이용 (공항보다 환율 유리).</p>
+<div class='spacer'></div>
+<h3>일본어 유용한 표현 (한국어-일본어 대조)</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>상황</th><th>한국어</th><th>일본어 발음 표기</th></tr></thead><tbody>
+<tr><td>인사</td><td>안녕하세요</td><td>안녕하세요 (アンニョンハセヨ)</td></tr>
+<tr><td>감사합니다</td><td>감사합니다</td><td>カムサハムニダ</td></tr>
+<tr><td>얼마예요?</td><td>얼마예요?</td><td>オルマエヨ?</td></tr>
+<tr><td>이것 주세요</td><td>이거 주세요</td><td>イゴ ジュセヨ</td></tr>
+<tr><td>영어 하세요?</td><td>영어 하세요?</td><td>ヨンオ ハセヨ?</td></tr>
+<tr><td>화장실 어디예요?</td><td>화장실 어디예요?</td><td>ファジャンシル オディエヨ?</td></tr>
+<tr><td>안 맵게 해주세요</td><td>안 맵게 해주세요</td><td>アン メッケ ヘジュセヨ</td></tr>
+<tr><td>카드 되나요?</td><td>카드 되나요?</td><td>カドゥ テナヨ?</td></tr>
+<tr><td>사진 찍어도 되나요?</td><td>사진 찍어도 되나요?</td><td>サジン チゴド テナヨ?</td></tr>
+<tr><td>도와주세요</td><td>도와주세요</td><td>トワジュセヨ</td></tr>
+<tr><td>길을 잃었어요</td><td>길을 잃었어요</td><td>キルル イロッソヨ</td></tr>
+<tr><td>병원에 가고 싶어요</td><td>병원에 가고 싶어요</td><td>ピョンウォネ カゴ シポヨ</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>면세 정보</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>외국인 부가세 환급</td><td>1회 구매 3만원 이상 시 부가세 10% 환급 가능</td></tr>
+<tr><td>환급 방법</td><td>면세 가맹점에서 TAX FREE 영수증 발급 → 공항/항구 환급 카운터 제출</td></tr>
+<tr><td>출국 전 환급 처리</td><td>김해공항 또는 부산항 출국장 내 세금 환급 카운터</td></tr>
+<tr><td>즉시 환급 가맹점</td><td>면세 표시 가게에서 즉시 환급 가능</td></tr>
+<tr><td>주의사항</td><td>미개봉 상태로 출국 심사 전 환급 처리 완료 필수</td></tr>
+<tr><td>면세점 쇼핑</td><td>롯데면세점 센텀시티점, 신세계면세점 센텀점, 공항 면세점</td></tr>
+<tr><td>일본 입국 면세 한도</td><td>20만 엔 이하 (술 3병, 담배 200개비, 향수 2온스 별도)</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>6. 긴급 연락처</h2>
+<div class='spacer'></div>
+<h3>한국 기본 긴급 전화</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>구분</th><th>전화번호</th><th>비고</th></tr></thead><tbody>
+<tr><td>경찰</td><td><strong>112</strong></td><td>24시간, 범죄·사고·미아 신고</td></tr>
+<tr><td>구급·응급의료</td><td><strong>119</strong></td><td>24시간, 화재·구조·응급환자</td></tr>
+<tr><td>소방</td><td><strong>119</strong></td><td>구급과 동일 번호</td></tr>
+<tr><td>해양경찰</td><td><strong>122</strong></td><td>해상 사고 신고</td></tr>
+<tr><td>범죄 피해 신고 (외국어)</td><td><strong>112</strong></td><td>통역 연결 가능</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<h3>부산 외국인 관광 지원</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>기관</th><th>전화</th><th>운영시간</th><th>서비스</th></tr></thead><tbody>
+<tr><td>관광불편신고센터 (한국관광공사)</td><td><strong>1330</strong></td><td>24시간</td><td>한·영·일·중 통역 서비스, 관광 안내, 불편 신고</td></tr>
+<tr><td>부산관광안내전화</td><td><strong>051-888-3655</strong></td><td>09:00~18:00</td><td>부산 지역 관광 안내</td></tr>
+<tr><td>부산 외국인종합안내센터</td><td><strong>051-501-0820</strong></td><td>평일 09:00~18:00</td><td>생활·법률·의료 안내</td></tr>
+<tr><td>영사콜센터 (해외 거주 한국인)</td><td><strong>+82-2-3210-0404</strong></td><td>24시간</td><td>재외국민 긴급 지원</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>일본인 비상시:</strong> 1330으로 전화하면 일본어 통역 즉시 연결 가능. 24시간 운영.</p>
+<div class='spacer'></div>
+<h3>주부산 일본국 총영사관</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>명칭</td><td>주부산 일본국 총영사관 (在釜山日本国総領事館)</td></tr>
+<tr><td>주소</td><td>부산광역시 동구 고관로 18 (초량동)</td></tr>
+<tr><td>전화</td><td><strong>051-465-5101</strong></td></tr>
+<tr><td>긴급 전화 (근무 외 시간)</td><td><strong>051-465-5101</strong> (자동 연결)</td></tr>
+<tr><td>운영시간</td><td>월~금 09:00~12:30, 13:30~17:00 (공휴일 제외)</td></tr>
+<tr><td>홈페이지</td><td>https://www.busan.mofa.go.jp</td></tr>
+<tr><td>서비스</td><td>여권 분실·재발급, 긴급 여행증명서, 의료·사고 지원, 영사 공증</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<p>> <strong>여권 분실 시:</strong> 즉시 경찰서에서 분실신고서(도난증명서) 발급 → 총영사관 방문하여 긴급 여행증명서 발급 신청.</p>
+<div class='spacer'></div>
+<h3>기타 유용한 연락처</h3>
+<div class='spacer'></div>
+<table>
+<thead><tr><th>기관</th><th>전화</th><th>비고</th></tr></thead><tbody>
+<tr><td>해운대 관광안내소</td><td>051-749-5700</td><td>해운대 현지 관광 정보</td></tr>
+<tr><td>자갈치 관광안내소</td><td>051-245-0909</td><td>남포동·자갈치 지역</td></tr>
+<tr><td>부산항 국제여객터미널</td><td>051-999-3000</td><td>선박 시간표, 출입국 안내</td></tr>
+<tr><td>김해국제공항 (국제선)</td><td>051-974-3114</td><td>항공 편 확인</td></tr>
+<tr><td>롯데워터파크 기장</td><td>1588-5005</td><td>운영시간·예약 확인</td></tr>
+<tr><td>응급의료 정보센터</td><td><strong>1339</strong></td><td>24시간 응급의료 상담, 가까운 병원 안내</td></tr>
+</tbody></table>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<h2>부록: 일본인을 위한 부산 여행 체크리스트</h2>
+<div class='spacer'></div>
+<h3>출발 전 (일본에서)</h3>
+<div class='spacer'></div>
+<ul>
+<li>[ ] 한국 여행자보험 가입 (의료 보장 포함)</li>
+<li>[ ] T-money 카드 구입 계획 (공항에서 바로 구입 가능)</li>
+<li>[ ] 원화 환전 (후쿠오카 공항 or 시내 환전소 권장)</li>
+<li>[ ] 파파고 앱 설치 (번역)</li>
+<li>[ ] 네이버지도 앱 설치</li>
+<li>[ ] 롯데워터파크 예약 확인</li>
+<li>[ ] 해외 신용카드 사용 가능 여부 확인 (VISA/Mastercard 권장)</li>
+</ul>
+<div class='spacer'></div>
+<h3>부산 도착 후</h3>
+<div class='spacer'></div>
+<ul>
+<li>[ ] T-money 카드 구입 및 충전 (편의점)</li>
+<li>[ ] 1330 번호 저장 (관광 지원 센터)</li>
+<li>[ ] 주부산 일본국 총영사관 전화번호 저장</li>
+<li>[ ] 숙소 주소 일본어로 메모 (택시 이용 시 보여주기용)</li>
+<li>[ ] 한국 유심 또는 와이파이 도시락 활성화 확인</li>
+</ul>
+<div class='spacer'></div>
+<hr>
+<div class='spacer'></div>
+<p><em>본 가이드는 2026년 7월 기준으로 작성되었습니다. 현지 상황에 따라 영업시간·요금·운영 정책이 변경될 수 있으므로 방문 전 공식 채널에서 재확인을 권장합니다.</em></p>
+<div class='spacer'></div></section>
+</div>
+
+<script>
+// Highlight active TOC link on scroll
+const chapters = document.querySelectorAll('.chapter');
+const links = document.querySelectorAll('#toc a');
+window.addEventListener('scroll', () => {
+  let current = '';
+  chapters.forEach(c => { if (window.scrollY >= c.offsetTop - 80) current = c.id; });
+  links.forEach(a => {
+    a.style.background = a.getAttribute('href') === '#' + current ? '#2c5f8a' : '';
+    a.style.color = a.getAttribute('href') === '#' + current ? '#fff' : '';
+  });
+});
+</script>
+</body>
+</html>
