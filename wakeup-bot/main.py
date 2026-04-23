@@ -1,4 +1,5 @@
 import os
+import asyncio
 import requests
 import logging
 from telegram import Update
@@ -50,16 +51,16 @@ async def wake(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     await update.message.reply_text(f"💤 현재 상태: {state}\n⏳ 깨우는 중...")
-    status = start_codespace()
+    status_code = start_codespace()
 
-    if status in [200, 202]:
+    if status_code in [200, 202]:
         await update.message.reply_text(
             "✅ 코드스페이스를 깨웠어요!\n"
             "1~2분 후 아래 링크에서 확인하세요:\n"
             "🔗 https://github.com/codespaces"
         )
     else:
-        await update.message.reply_text(f"❌ 실패했어요. (status: {status})")
+        await update.message.reply_text(f"❌ 실패했어요. (status: {status_code})")
 
 async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if update.effective_chat.id != ALLOWED_CHAT_ID:
@@ -68,7 +69,7 @@ async def status(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     state = get_codespace_state()
     emoji = "✅" if state == "Available" else "💤"
-    await update.message.reply_text(f"{emoji} 코드스페이스 상태: **{state}**", parse_mode="Markdown")
+    await update.message.reply_text(f"{emoji} 코드스페이스 상태: {state}")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(
@@ -77,10 +78,13 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "/status - 현재 상태 확인"
     )
 
-if __name__ == "__main__":
+async def main():
     app = ApplicationBuilder().token(TELEGRAM_TOKEN).build()
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("wake", wake))
     app.add_handler(CommandHandler("status", status))
     print("웨이크업 봇 시작!")
-    app.run_polling()
+    await app.run_polling()
+
+if __name__ == "__main__":
+    asyncio.run(main())
