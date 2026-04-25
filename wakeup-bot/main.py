@@ -19,14 +19,23 @@ GITHUB_API = "https://api.github.com"
 GH_HEADERS = {
     "Authorization": f"Bearer {GITHUB_TOKEN}",
     "Accept": "application/vnd.github+json",
+    "X-GitHub-Api-Version": "2022-11-28",
 }
+
+# start API가 안전하게 동작하는 상태들
+STARTABLE_STATES = {"Shutdown", "Unknown"}
+# 이미 켜져 있거나 켜지는 중인 상태들
+ACTIVE_STATES = {"Available", "Starting", "Queued", "Provisioning", "Awaiting", "Rebuilding"}
 
 
 async def send_message(client, chat_id, text):
-    await client.post(
-        f"{TELEGRAM_API}/sendMessage",
-        json={"chat_id": chat_id, "text": text},
-    )
+    try:
+        await client.post(
+            f"{TELEGRAM_API}/sendMessage",
+            json={"chat_id": chat_id, "text": text},
+        )
+    except Exception as e:
+        logger.error("sendMessage 실패: %s", e)
 
 
 async def get_codespace_state(client):
@@ -34,16 +43,24 @@ async def get_codespace_state(client):
         f"{GITHUB_API}/user/codespaces/{CODESPACE_NAME}", headers=GH_HEADERS
     )
     if res.status_code == 200:
-        return res.json().get("state", "Unknown")
+        data = res.json()
+        return data.get("state", "Unknown"), data.get("pending_operation", False)
     logger.warning("GitHub GET failed: %s %s", res.status_code, res.text)
-    return None
+    return None, None
 
 
 async def start_codespace(client):
     res = await client.post(
         f"{GITHUB_API}/user/codespaces/{CODESPACE_NAME}/start", headers=GH_HEADERS
     )
-    return res.status_code
+    detail = ""
+    if res.status_code not in (200, 202):
+        try:
+            detail = res.json().get("message", "") or res.text
+        except Exception:
+            detail = res.text
+        logger.warning("GitHub start failed: %s %s", res.status_code, detail)
+    return res.status_code, detail
 
 
 async def handle_update(client, update):
@@ -72,14 +89,20 @@ async def handle_update(client, update):
         return
 
     if text == "/status":
-        state = await get_codespace_state(client)
+        state, pending = await get_codespace_state(client)
+        if state is None:
+            await send_message(client, chat_id, "❌ 코드스페이스 정보를 가져오지 못했습니다.")
+            return
         emoji = "✅" if state == "Available" else "💤"
-        await send_message(client, chat_id, f"{emoji} 코드스페이스 상태: {state}")
+        msg = f"{emoji} 코드스페이스 상태: {state}"
+        if pending:
+            msg += " (작업 진행 중)"
+        await send_message(client, chat_id, msg)
         return
 
     if text == "/wake":
         await send_message(client, chat_id, "🔍 상태 확인 중...")
-        state = await get_codespace_state(client)
+        state, pending = await get_codespace_state(client)
 
         if state is None:
             await send_message(client, chat_id, "❌ 코드스페이스 정보를 가져오지 못했습니다.")
@@ -93,8 +116,18 @@ async def handle_update(client, update):
             )
             return
 
+        # 켜지는 중이면 굳이 start 호출하지 말고 대기 안내
+        if state in ACTIVE_STATES or pending:
+            await send_message(
+                client,
+                chat_id,
+                f"⏳ 현재 상태: {state}\n이미 깨어나는 중입니다. 1~2분 후 /status 로 확인하세요.",
+            )
+            return
+
+        # 그 외(Shutdown 등)일 때만 start 호출
         await send_message(client, chat_id, f"💤 현재 상태: {state}\n⏳ 깨우는 중...")
-        status_code = await start_codespace(client)
+        status_code, detail = await start_codespace(client)
 
         if status_code in (200, 202):
             await send_message(
@@ -102,8 +135,29 @@ async def handle_update(client, update):
                 chat_id,
                 "🚀 깨우기 요청 완료!\n1~2분 후 codespace_bot 에게 메시지를 보내보세요.",
             )
+            return
+
+        # 실패 케이스 친절하게
+        if status_code == 409:
+            msg = (
+                f"⚠️ 지금은 깨울 수 없는 상태입니다 (HTTP 409, state={state}).\n"
+                f"이유: {detail or '전이 중이거나 다른 작업 진행 중'}\n\n"
+                "잠시 후 /status 로 상태를 확인하고 다시 /wake 해주세요."
+            )
+        elif status_code in (401, 403):
+            msg = (
+                f"🔐 GitHub 토큰 권한 문제 (HTTP {status_code})\n"
+                f"{detail}\n\n"
+                "PAT에 codespaces (write) 권한이 있는지 확인하세요."
+            )
+        elif status_code == 404:
+            msg = (
+                f"❓ 코드스페이스를 찾을 수 없습니다 (HTTP 404)\n"
+                f"CODESPACE_NAME 환경변수 확인: {CODESPACE_NAME}"
+            )
         else:
-            await send_message(client, chat_id, f"❌ 실패 (HTTP {status_code})")
+            msg = f"❌ 실패 (HTTP {status_code})\n{detail}"
+        await send_message(client, chat_id, msg)
 
 
 async def polling_loop():
