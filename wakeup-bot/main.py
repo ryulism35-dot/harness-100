@@ -1,5 +1,6 @@
 import os
 import asyncio
+import time
 import httpx
 import logging
 from aiohttp import web
@@ -61,6 +62,44 @@ async def start_codespace(client):
             detail = res.text
         logger.warning("GitHub start failed: %s %s", res.status_code, detail)
     return res.status_code, detail
+
+
+async def wait_until_ready(client, chat_id):
+    """Poll codespace state until Available, then notify user. Runs as background task."""
+    # postStartCommand로 autostart.sh가 실행되어 봇이 떠야 진짜 준비 완료
+    READY_GRACE_SECONDS = 15
+    POLL_INTERVAL = 8
+    TIMEOUT = 240  # 4분
+
+    deadline = time.monotonic() + TIMEOUT
+    last_state = None
+    while time.monotonic() < deadline:
+        await asyncio.sleep(POLL_INTERVAL)
+        try:
+            state, pending = await get_codespace_state(client)
+        except Exception as e:
+            logger.warning("wait_until_ready 폴링 실패: %s", e)
+            continue
+
+        if state and state != last_state:
+            logger.info("코드스페이스 상태 전이: %s -> %s (pending=%s)", last_state, state, pending)
+            last_state = state
+
+        if state == "Available" and not pending:
+            # 봇 프로세스가 polling 시작할 시간 확보
+            await asyncio.sleep(READY_GRACE_SECONDS)
+            await send_message(
+                client,
+                chat_id,
+                "✅ 코드스페이스 준비 완료!\n📨 이제 codespace_bot 에게 메시지를 보내세요.",
+            )
+            return
+
+    await send_message(
+        client,
+        chat_id,
+        "⏰ 4분이 지났는데도 Available 상태가 되지 않았습니다.\n/status 로 다시 확인해주세요.",
+    )
 
 
 async def handle_update(client, update):
@@ -133,8 +172,9 @@ async def handle_update(client, update):
             await send_message(
                 client,
                 chat_id,
-                "🚀 깨우기 요청 완료!\n1~2분 후 codespace_bot 에게 메시지를 보내보세요.",
+                "🚀 시작 요청을 보냈습니다.\n준비되면 다시 알려드릴게요. (보통 1~2분)",
             )
+            asyncio.create_task(wait_until_ready(client, chat_id))
             return
 
         # 실패 케이스 친절하게
